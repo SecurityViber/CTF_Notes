@@ -48,4 +48,4 @@ hashcat -a 0 -m 22100 backup.hash /usr/share/wordlist/rockyou.txt
 
 
 ## About tooling 
-![[Pasted image 20251031221824.png]]
+![[john_helper_tools.png]]

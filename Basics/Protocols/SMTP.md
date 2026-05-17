@@ -7,7 +7,7 @@
 	- By this you can actually send an Email... wtf?!!
 - Session can be initialized by `HELO/EHLO`
 
-![[Pasted image 20250120191855.png]]
+![[smtp_session_overview.png]]
 
 ### Footprinting
 

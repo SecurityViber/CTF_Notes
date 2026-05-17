@@ -19,38 +19,38 @@ tags:
 
 ## Active reconnaissance 
 
-![[Pasted image 20250127185059.png]]
+![[active_reconnaissance.png]]
 
 ## Passive reconnaissance
 
-![[Pasted image 20250127185152.png]]
+![[passive_reconnaissance.png]]
 
 
 ## Whois
 
-![[Pasted image 20250127192016.png]]
+![[whois_lookup.png]]
 
 
 
 ## DNS 
 
 How a DNS zone file looks like 
-![[Pasted image 20250127193822.png]]
+![[dns_zone_file.png]]
 
 
 Record Types 
 
-![[Pasted image 20250127193933.png]]
+![[dns_record_types.png]]
 
 
 DNS Tools 
 
-![[Pasted image 20250128194804.png]]
+![[dns_tools.png]]
 
 
 Dig
 
-![[Pasted image 20250128195312.png]]
+![[dig_tool_options.png]]
 
 
 ## Subdomain enumeration 
@@ -73,7 +73,7 @@ dnsenum --enum inlanefreight.com -f /usr/share/seclists/Discovery/DNS/subdomains
 ## DNS Zone Transfer 
 
 
-![[Pasted image 20250128200340.png]]
+![[dns_zone_transfer.png]]
 
 
 You can request a zone transfer by `dig axfr @nsztm1.digi.ninja zonetransfer.me
@@ -81,10 +81,10 @@ You can request a zone transfer by `dig axfr @nsztm1.digi.ninja zonetransfer.me
 
 ## Virtual Hosts
 
-![[Pasted image 20250128212345.png]]
+![[virtual_hosts_overview.png]]
 
 
-![[Pasted image 20250128212723.png]]
+![[virtual_hosts_diagram.png]]
 
 
 Discovery done by:
@@ -111,11 +111,11 @@ curl -s "https://crt.sh/?q=facebook.com&output=json" | jq -r '.[]
 What are some commone Fingerprinting Techniques?
 
 
-![[Pasted image 20250129213510.png]]
+![[web_fingerprinting_techniques.png]]
 
 Commonly used Tools for Fingerprinting
 
-![[Pasted image 20250129213528.png]]
+![[fingerprinting_tools.png]]
 
 
 Some Commands you can use 
@@ -142,11 +142,11 @@ nikto -h inlanefreight.com -Tuning b
 
 How you an configure a robots.txt file 
 
-![[Pasted image 20250130122543.png]]
+![[robots_txt_configuration.png]]
 
 
 .well-known
-![[Pasted image 20250130122932.png]]
+![[well_known_paths.png]]
 
 Common Crawling tools are 
 
@@ -172,7 +172,7 @@ python3 ReconSpider.py http://inlanefreight.com
 
 Search Operators
 
-![[Pasted image 20250130123820.png]]
+![[google_search_operators.png]]
 
 
 
@@ -187,7 +187,7 @@ Doing all this manual Reconnaissance is super annoying... what about just using 
 - OSINT Framework
 
 
-![[Pasted image 20250130125724.png]]
+![[osint_framework.png]]
 
 
 ## Questions 

@@ -17,7 +17,7 @@ Tags: #nmap #Enumeration #SMB #FTP #SNMP #WebSecurity #Metasploit #PrivEsc #tool
 
 
 Risk Management Process
-![[Pasted image 20250114111835.png]]
+![[risk_management_process.png]]
 
 
 

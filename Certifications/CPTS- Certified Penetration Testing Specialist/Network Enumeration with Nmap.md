@@ -56,7 +56,7 @@ sudo nmap 10.129.2.28 -p 21 --packet-trace -Pn -n --disable-arp-ping
 
 
 Possible Port states 
-![[Pasted image 20250104080406.png]]
+![[nmap_port_states.png]]
 
 
 
@@ -79,7 +79,7 @@ Possible Port states
 
 Or also called NSE 
 
-![[Pasted image 20250125231306.png]]
+![[nmap_scripting_engine.png]]
 
 
 

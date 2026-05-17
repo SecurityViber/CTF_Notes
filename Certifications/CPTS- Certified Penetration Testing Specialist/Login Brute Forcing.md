@@ -8,7 +8,7 @@ tags:
 
 
 Credential Stuffing: Leveraging Stolen Data for Unauthorized Access 
-![[Pasted image 20250405174223.png]]
+![[credential_stuffing.png]]
 
 Using hydra 
 
@@ -65,7 +65,7 @@ hydra -L top-usernames-shortlist.txt -P 2023-200_most_used_passwords.txt -f 94.2
 medusa [target_options] [credential_options] -M module [module_options]
 ```
 
-![[Pasted image 20250407124241.png]]
+![[medusa_usage.png]]
 
 Using Medusa to login to the system 
 

@@ -7,7 +7,7 @@ tags:
 ---
 
 
-![[Pasted image 20250209151047.png]]
+![[metasploit_overview.png]]
 
 
 
@@ -29,7 +29,7 @@ Installation process
 
 MSF Engagement Structure 
 
-![[Pasted image 20250209151833.png]]
+![[msf_engagement_structure.png]]
 
 
 
@@ -65,7 +65,7 @@ A `Single` payload contains the exploit and the entire shellcode for the selec
 
 ## Most Common Payload types 
 
-![[Pasted image 20250209155308.png]]
+![[msf_payload_types.png]]
 
 
 ## Encoders 
@@ -209,10 +209,10 @@ For Post exploitation elements you can use modules such as `local_exploit_sugges
 
 Type of Security Policies
 
-![[Pasted image 20250211213621.png]]
+![[security_policies_types.png]]
 
 
-![[Pasted image 20250211213600.png]]
+![[security_policies_evasion.png]]
 
 
 
@@ -229,4 +229,4 @@ wgat
 
 
 Common Known Packer Software 
-![[Pasted image 20250211214607.png]]
+![[packer_software.png]]

@@ -10,7 +10,7 @@ General Notes:
 - LNK triggered execution of WMIC tool 
 - JS code used to download using the Bitsadmin tool
 - Base64 encoding/decoding using Certuitl tool
-![[Pasted image 20250807225018.png]]
+![[file_transfer_techniques.png]]
 
 - PowerShell -° System.Net.WebClient can be used to download via HTTP, HTTPS or FTP
 

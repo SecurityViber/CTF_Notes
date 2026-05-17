@@ -308,7 +308,7 @@ def virtual_memory():
 ### Library Path 
 
 In python when listing the `PYTHONPATH` variable, the higher up in the list something is the higher the priority. In case you have write access to the upper directories, you can try to add some used modules in those higher directories, to escalate privileges. 
-![[Pasted image 20260405230701.png]]
+![[python_path_hijacking.png]]
 
 
 

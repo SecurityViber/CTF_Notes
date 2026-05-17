@@ -108,7 +108,7 @@ cn' UNION select 1,COLUMN_NAME,TABLE_NAME,TABLE_SCHEMA from INFORMATION_SCHEMA.C
 
 SQLi Discovery 
 
-![[Pasted image 20250331210720.png]]
+![[sqli_discovery.png]]
 
 
 ## Some Challenge Notes 

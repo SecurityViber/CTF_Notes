@@ -23,17 +23,17 @@ tags:
 ---
 
 
-![[Pasted image 20250217144259.png]]
-![[Pasted image 20250217144335.png]]
+![[linux_shadow_file_format.png]]
+![[linux_hash_algorithm_ids.png]]
 
 Windows Authentication Process
-![[Pasted image 20250217144736.png]]
+![[windows_auth_process.png]]
 
 
 - [Credentials Processes in Windows Authentication | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication)
 - [Credentials Processes in Windows Authentication | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication)
 
-![[Pasted image 20250217162027.png]]
+![[windows_logon_process.png]]
 
 
 ## John the Ripper 
@@ -61,7 +61,7 @@ locate *2john*
 
 ```
 
-![[Pasted image 20250217162834.png]]
+![[john_helper_tools_list.png]]
 
 
 ## Services and Tools
@@ -97,7 +97,7 @@ hydra -L user.list -P password.list rdp://<ip>
 
 
 - You can create a rule file to apply some rules to hashcat
-- ![[Pasted image 20250225143304.png]]
+- ![[hashcat_rules.png]]
 
 ```bash 
 # Example of a custom.rule -> Will be applied to each word in the passwordlist
@@ -322,7 +322,7 @@ grep -rnw "ssh-rsa" /home/* 2>/dev/null | grep ":1"
 
 Infos from well known log files 
 
-![[Pasted image 20250227044622.png]]
+![[log_file_credentials.png]]
 
 To read credentials out of Memory and cache you can use the tool [huntergregal/mimipenguin: A tool to dump the login password from the current linux user](https://github.com/huntergregal/mimipenguin)
 

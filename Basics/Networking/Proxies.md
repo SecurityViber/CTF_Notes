@@ -10,4 +10,4 @@ Types of Proxy Services:
 - Transparent Proxy -> Each proxy is transparent or non-transparently. When transparent the client doesn't know about its existence
 
 ## Models 
-![[Pasted image 20260310083905.png]]
+![[osi_vs_tcpip_model.png]]
