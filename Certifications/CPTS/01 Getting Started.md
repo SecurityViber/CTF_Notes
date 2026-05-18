@@ -1,3 +1,9 @@
+---
+tags: [cpts, htb]
+---
+
+[[Certifications/CPTS/Index|← CPTS]]
+
 
 Tags: #nmap #Enumeration #SMB #FTP #SNMP #WebSecurity #Metasploit #PrivEsc #tools 
 

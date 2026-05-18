@@ -1,3 +1,9 @@
+---
+tags: [cdsa, htb, incident-response]
+---
+
+[[Certifications/CDSA/Index|← CDSA]]
+
 
 
 #sdfsdfsdf

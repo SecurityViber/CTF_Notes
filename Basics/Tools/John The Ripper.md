@@ -1,3 +1,11 @@
+---
+tags: [basics, tool, password-cracking]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Password Cracking]] · [[Password Attacks]]
+
 
 ## Base commands to know
 ```bash

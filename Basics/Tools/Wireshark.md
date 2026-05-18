@@ -1,3 +1,11 @@
+---
+tags: [basics, tool, network-analysis]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Network Analysis]]
+
 
 
 - ## Profiles 

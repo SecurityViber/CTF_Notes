@@ -1,3 +1,11 @@
+---
+tags: [basics, tool, proxy, pivoting]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Pivoting, Tunneling and Port Forwarding]] · [[Proxies]]
+
 
 Proxychains in combination with Tor can be used to hide your identity. 
 To use proxychains you have to configure the file under `/etc/proxychains4.conf`

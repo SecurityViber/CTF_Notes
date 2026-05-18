@@ -1,3 +1,9 @@
+---
+tags: [basics, technique, windows, encryption]
+---
+
+[[Basics/Index|← Basics]]
+
 
 ## Mounting Bitlocker 
 

@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, linux, password]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Password Attacks]] · [[Password Cracking]]
+
 
 ## Authentication Mechanism
 Most common used is PAM (Pluggable Authentication Modules).

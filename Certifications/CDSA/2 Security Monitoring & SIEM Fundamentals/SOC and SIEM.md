@@ -1,3 +1,9 @@
+---
+tags: [cdsa, htb, soc, siem]
+---
+
+[[Certifications/CDSA/Index|← CDSA]]
+
 
 
 Typical Roles in a SOC

@@ -1,3 +1,11 @@
+---
+tags: [basics, protocol, mail]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[SMTP]]
+
 
 ## Tools to interact with the service 
 - Evolution

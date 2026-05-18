@@ -1,3 +1,11 @@
+---
+tags: [basics, protocol, rdp]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[xfreerdp3]]
+
 
  ```bash 
 rdp-sec-check.pl <FQDN/IP>

@@ -1,3 +1,9 @@
+---
+tags: [basics, technique, web]
+---
+
+[[Basics/Index|← Basics]]
+
 
 ## Resources 
 

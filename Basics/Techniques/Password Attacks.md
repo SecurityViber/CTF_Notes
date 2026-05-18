@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, password]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Certifications/CPTS/Password Attacks|Password Attacks (CPTS — detailed)]] · [[Hydra]] · [[Medusa]] · [[John The Ripper]]
+
 
 ## Hybrid Attacks 
 When working with Hybrid attacks we can use, what we know to refine an existing dictionary or build a new one with a proper basis 

@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, web, proxy]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Proxies]] · [[ProxyChains]]
+
 
 Most common Web Proxies are
 - Burp Suit -> Official king... but needs pretty much an enterprise license for everything

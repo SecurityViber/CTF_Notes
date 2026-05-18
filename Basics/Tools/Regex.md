@@ -1,3 +1,9 @@
+---
+tags: [basics, tool]
+---
+
+[[Basics/Index|← Basics]]
+
 
 Here a List of some useful Regexes 
 ```sh

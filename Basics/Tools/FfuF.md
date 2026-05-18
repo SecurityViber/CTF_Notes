@@ -1,3 +1,11 @@
+---
+tags: [basics, tool, fuzzing]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Directory Busting]]
+
 
 ## Working with FFUF
 ```bash

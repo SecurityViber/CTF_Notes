@@ -1,3 +1,9 @@
+---
+tags: [basics, linux, cheatsheet]
+---
+
+[[Basics/Index|← Basics]]
+
 
 
 

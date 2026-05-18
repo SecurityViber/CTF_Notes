@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, osint, recon]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Information Gathering - Web Edition]]
+
 
 
 ## About Certificates 

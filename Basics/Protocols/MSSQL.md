@@ -1,3 +1,11 @@
+---
+tags: [basics, protocol, database, mssql]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[SQLMap]]
+
 
 
 ```bash

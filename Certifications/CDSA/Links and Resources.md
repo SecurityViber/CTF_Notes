@@ -1,3 +1,9 @@
+---
+tags: [cdsa, htb, resources]
+---
+
+[[Certifications/CDSA/Index|← CDSA]]
+
 
 ## General
 

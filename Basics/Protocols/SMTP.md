@@ -1,3 +1,11 @@
+---
+tags: [basics, protocol, smtp, mail]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Mail]]
+
 
 - Accepts request on Port 25, but newer versions take port 587
 - DKIM - DomainKeys

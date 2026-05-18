@@ -1,3 +1,9 @@
+---
+tags: [basics, technique, web, xss]
+---
+
+[[Basics/Index|← Basics]]
+
 
 ## Types of XSS
 

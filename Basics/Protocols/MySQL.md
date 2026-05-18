@@ -1,3 +1,11 @@
+---
+tags: [basics, protocol, database, mysql]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[SQLMap]]
+
 
 ## Overview
 

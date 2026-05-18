@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, shell, payload]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Certifications/CPTS/Shell & Payloads|Shell & Payloads (CPTS — detailed)]] · [[Reverse Shell]] · [[Metasploit]]
+
 
 ## General concepts 
 

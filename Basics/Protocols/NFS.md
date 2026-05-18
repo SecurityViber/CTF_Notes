@@ -1,3 +1,9 @@
+---
+tags: [basics, protocol, nfs]
+---
+
+[[Basics/Index|← Basics]]
+
 # Table of physical filesystems onf an NFS server 
 /etc/exports 
 

@@ -1,3 +1,9 @@
+---
+tags: [basics, technique, wifi, wireless]
+---
+
+[[Basics/Index|← Basics]]
+
 
 
 ## Cracking WPA/WPA2 Handshakes with Hashcat

@@ -1,3 +1,9 @@
+---
+tags: [basics, protocol, snmp]
+---
+
+[[Basics/Index|← Basics]]
+
 
 
 - Concepts -> 

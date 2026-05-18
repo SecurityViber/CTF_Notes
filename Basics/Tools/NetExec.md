@@ -1,3 +1,11 @@
+---
+tags: [basics, tool, network]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[SMB]] · [[WinRM]]
+
 
 ## Basic Commands 
 ```bash 

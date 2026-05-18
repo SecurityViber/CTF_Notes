@@ -1,3 +1,9 @@
+---
+tags: [writeup, index]
+---
+
+[[Home]]
+
 
 
 | Box         | Notes                                                                                                                                                                                                                                 | Last rooted |

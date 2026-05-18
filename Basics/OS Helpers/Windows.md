@@ -1,3 +1,9 @@
+---
+tags: [basics, windows, cheatsheet]
+---
+
+[[Basics/Index|← Basics]]
+
 # Windows Fundamentals
 
 ## Table of Contents

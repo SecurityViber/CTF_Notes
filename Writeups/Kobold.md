@@ -1,3 +1,9 @@
+---
+tags: [writeup]
+---
+
+[[Writeups/Overview|← Writeups]]
+
 
 ## Summary 
 

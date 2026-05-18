@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, linux, privesc]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Capabilities]] · [[Linux Password Hunting]]
+
 
 
 ## Tools

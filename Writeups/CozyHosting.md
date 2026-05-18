@@ -1,3 +1,9 @@
+---
+tags: [writeup, htb, linux]
+---
+
+[[Writeups/Overview|← Writeups]]
+
 
 I mean it was a so called "easy" box. But in the beginning everything is a bit harder I guess :P. Since I have this VIP+ version, I used the Guided Mode. Because sometimes if you don't know, you don't know and at least I know then in which direction to look for. Anyway, about the box:
 

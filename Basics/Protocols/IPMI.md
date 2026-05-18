@@ -1,3 +1,9 @@
+---
+tags: [basics, protocol, ipmi]
+---
+
+[[Basics/Index|← Basics]]
+
 
 - Port 623 
 - Systems that are use IPMI are called Baseboard Management Controllers

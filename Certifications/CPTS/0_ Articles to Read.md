@@ -1,3 +1,9 @@
+---
+tags: [cpts, htb, reading-list]
+---
+
+[[Certifications/CPTS/Index|← CPTS]]
+
 
 - [Equifax Hack](https://www.zdnet.com/article/us-government-releases-post-mortem-report-on-equifax-hack/)
 - [Tips to Protect the DNS from Data Exfiltration](https://www.darkreading.com/cyber-risk/tips-to-protect-the-dns-from-data-exfiltration)

@@ -1,3 +1,11 @@
+---
+tags: [basics, tool, exploitation]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Using the Metasploit Framework]] · [[Shells and Payloads]]
+
 
 ## Useful commands 
 

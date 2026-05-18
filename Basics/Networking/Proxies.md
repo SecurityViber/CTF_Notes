@@ -1,3 +1,9 @@
+---
+tags: [basics, networking]
+---
+
+[[Basics/Index|← Basics]]
+
 
 
 - Proxis will almost always operate at Layer 7 of OSI Model

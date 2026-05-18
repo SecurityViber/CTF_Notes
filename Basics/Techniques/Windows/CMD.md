@@ -1,3 +1,9 @@
+---
+tags: [basics, technique, windows]
+---
+
+[[Basics/Index|← Basics]]
+
 
 
 ```cmd

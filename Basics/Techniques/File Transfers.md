@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, file-transfer]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[Certifications/CPTS/File Transfers|File Transfers (CPTS — detailed)]]
+
 
 
 ## Spinning Up File Servers 

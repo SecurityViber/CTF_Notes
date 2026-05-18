@@ -1,3 +1,11 @@
+---
+tags: [basics, technique, web, recon]
+---
+
+[[Basics/Index|← Basics]]
+
+> [!info] See also: [[FfuF]]
+
 
 For directory busting there are multiple tools out there. Here a few you could use. 
 
