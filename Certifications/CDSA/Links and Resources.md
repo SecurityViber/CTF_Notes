@@ -15,24 +15,20 @@ tags: [cdsa, htb, resources]
 - [LOLBAS](https://lolbas-project.github.io)
 
 
-## SOC stuff
+## SOC
 
-- [Ultimate IT - Security](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx) -> Reference when you want to check for Windows Event Codes
+- [Ultimate IT - Security](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx) → Reference for Windows Event Codes
 - [Advanced XML filtering - Windows Event Logs](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/advanced-xml-filtering-in-the-windows-event-viewer/ba-p/399761)
 - [Understanding SDDL Syntax](https://itconnect.uw.edu/tools-services-support/it-systems-infrastructure/msinf/other-help/understanding-sddl-syntax/)
 - [Sysmon Documentation](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmonaca)
 - [Sysmon Config File - SwiftOnSecurity Github](https://github.com/SwiftOnSecurity/sysmon-config)
 - [Sysmon Config File - sysmon modular](https://github.com/olafhartong/sysmon-modular)
+- [MITRE ATT&CK](https://attack.mitre.org/)
 
-
-## IOC's
+## IOCs
 
 - [IOC Editor by Mandiant](https://fireeye.market/apps/S7cWpi9W)
 - [Yara](https://virustotal.github.io/yara/)
-
-## Soc Stuff
-
-- [MITRE ATT&CK](https://attack.mitre.org/)
 
 
 ## Hacking Stuff 

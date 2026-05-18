@@ -14,7 +14,7 @@ This was actually a rather easy machine, once you know the basics.
 ### Port Scanning
 After a first Nmap, I discovered that it is a Ubuntu Linux machine on which the following ports are open:
 - 22: General ssh access -> ignoring this for now
-- 80:  open but rediret to https://kobold.htb
+- 80:  open but redirects to https://kobold.htb
 - 443:  https open for the domain kobold.htb 
 
 ### Directory busting
@@ -46,11 +46,11 @@ Behind `https://mcp.kobold.htb` runs the service MCPJam. In the settings I disco
 - https://github.com/MCPJam/inspector/security/advisories/GHSA-232v-j27c-5pp6
 
 ### Privatebin
-Beind `https://bin.kobold.htb` a privatebin ist hosted. The version is `2.0.2`. When googling for RCE or other vulnerabilities, I did not find anything.  
+Behind `https://bin.kobold.htb` a PrivateBin is hosted. The version is `2.0.2`. When googling for RCE or other vulnerabilities, I did not find anything.  
 
 ## Initial Foothold 
 ### MCPJam 
-As descirebed on github I first had to create a new MCP server called `mytest` using the `npx @mcpjam/inspector@latest` package.
+As described on GitHub, I first had to create a new MCP server called `mytest` using the `npx @mcpjam/inspector@latest` package.
 
 After that I had to reform the HTTP Request
 
@@ -68,10 +68,10 @@ In the home directory I got the userflag.
 ## Privilege Escalation 
 To do some privEsc, I did some basic enumeration of the system like:
 - looking at groups (member of operators)
-- Running linpeas (which showed me already that there are week socket permissions for docker)
+- Running linpeas (which showed me already that there are weak socket permissions for docker)
 - finding all the files to which I have access with the group operator `find / -group operators 2>/dev/null` -> Which redirected me to the topic of the second running application which is the `privatebin
 
-After trying more and more enumeration on the low priv user I discoverd (with the help of a writeup), that I can just try to add myself to the docker usergroup....
+After trying more and more enumeration on the low-priv user I discovered (with the help of a writeup) that I can just add myself to the docker group.
 
 ```bash 
 # Switching active group to docker using newgrp 
@@ -81,7 +81,7 @@ newgrp docker
 docker ps 
 
 # I can now use an already existing image and spin up a temporary container to which I can mount the root directory using the root user 
-docker run --rm -it -u 0 --entry-oint sh -v /:/mnt privatebin/nginx-fpm-alpine:2.0.2
+docker run --rm -it -u 0 --entrypoint sh -v /:/mnt privatebin/nginx-fpm-alpine:2.0.2
 
 # Using the chroot we can now access the underlying filesystem
 chroot /mnt sh

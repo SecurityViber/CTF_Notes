@@ -9,22 +9,40 @@ tags: [basics, protocol, database, mssql]
 
 
 ```bash
-
-# Conecting to a database
+# Connecting to a database (Linux)
 sqsh -S 10.129.20.13 -U username -P Password123
 
 # Windows machine
 sqlcmd -S 10.129.20.13 -U username -P Password123
-
-# Here some tips to get information out of the MSSQ Database 
-
-
 ```
 
+## Basic Enumeration
 
+```sql
+-- List all databases
+SELECT name FROM sys.databases;
+GO
 
-```sqsh
+-- List tables in the current database
+SELECT table_name FROM information_schema.tables WHERE table_type = 'BASE TABLE';
+GO
 
+-- List users
+SELECT name, type_desc FROM sys.server_principals WHERE type IN ('S','U');
+GO
+
+-- Check current user privileges
+SELECT IS_SRVROLEMEMBER('sysadmin');
+GO
+
+-- Read a local file (requires xp_cmdshell or BULK INSERT)
+EXEC xp_cmdshell 'whoami';
+GO
+
+-- Enable xp_cmdshell (if disabled)
+EXEC sp_configure 'show advanced options', 1; RECONFIGURE;
+EXEC sp_configure 'xp_cmdshell', 1; RECONFIGURE;
+GO
 ```
 
 

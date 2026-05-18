@@ -6,9 +6,10 @@ tags: [writeup, index]
 
 
 
-| Box         | Notes                                                                                                                                                                                                                                 | Last rooted |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| CodePartTwo | One of the first boxes, so it felt hard. But all in all it is a straight forward box                                                                                                                                                  | 09.02.2026  |
-| Blue        | For sure the easiest possible box. You just have to use the eternal Blue vulnerability and then you are set                                                                                                                           | 10.02.2026  |
-| NetMon      | Box was not too crazy. I pretty much almost had everything without getting a hint. But I missed one small thing, which would have been to download the user. Further on I learned that there is the type of authenticated RCE attacks | 10.2.2026   |
-| Eighteen    |                                                                                                                                                                                                                                       |             |
+| Box                          | Notes                                                                                                                                                                          | Last rooted |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
+| [[Bashed]]                   | Linux box. Port 80 only. Found a phpbash webshell via directory busting, used it as foothold. PrivEsc via sudo and cron jobs.                                                  |             |
+| [[CozyHosting]]              | Linux box. Spring Boot actuator leaked session token → web portal access → OS command injection via `/executessh` → reverse shell → postgres creds → hashcat → SSH sudo PrivEsc. |             |
+| [[Forgotten]]                | Linux box. LimeSurvey installer on port 80 was exploitable for initial foothold.                                                                                               |             |
+| [[Kobold]]                   | Linux box. MCPJam RCE (GHSA-232v-j27c-5pp6) for foothold, then docker group abuse to mount host filesystem and read root flag.                                                 |             |
+| [[Return]]                   | Windows box.                                                                                                                                                                   |             |

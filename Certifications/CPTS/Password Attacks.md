@@ -22,6 +22,8 @@ tags:
   - RAM
 ---
 
+[[Certifications/CPTS/Index|← CPTS]]
+
 
 ![[linux_shadow_file_format.png]]
 ![[linux_hash_algorithm_ids.png]]
@@ -30,7 +32,6 @@ Windows Authentication Process
 ![[windows_auth_process.png]]
 
 
-- [Credentials Processes in Windows Authentication | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication)
 - [Credentials Processes in Windows Authentication | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication)
 
 ![[windows_logon_process.png]]
@@ -255,16 +256,16 @@ Use a proper search term list to find all your stuff. As for example
 For password credential gathering Tools such as [AlessandroZ/LaZagne: Credentials recovery project](https://github.com/AlessandroZ/LaZagne) can be used. Ideally you have an offline version of the exe you can upload later on
 
 ```cmd
-sart lazagne.exe all
+start lazagne.exe all
 ```
 
-Another built in tool you could use `findstr
+Another built in tool you could use is `findstr`:
 
 ```bash 
 findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml *.git *.ps1 *.yml
 ```
 
-Other typical places where you could find passwordas are at 
+Other typical places where you could find passwords are at 
 
 - Group Policy in the SYSVOL share
 - scripts 

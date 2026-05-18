@@ -24,4 +24,5 @@ sudo nmap <ip> -sC -sV -p25
 sudo nmap <ip> -p25 --script smtp-open-relay -v
 
 # Enumerating users 
-smtp-user-enum
+smtp-user-enum -M VRFY -U /usr/share/wordlists/metasploit/unix_users.txt -t <ip>
+```

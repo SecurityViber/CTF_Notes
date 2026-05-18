@@ -14,9 +14,9 @@ tags: [basics, protocol, smb]
 net use n: \\<ip>\Finance
 
 # Mount smb share using username pasword 
-net use n \\<ip>\Finance /usr:plaintext Password123
+net use n: \\<ip>\Finance /user:plaintext Password123
 
-# Using dir you can search for specific filses such as for credentials 
+# Using dir you can search for specific files such as for credentials 
 # here /s means to search files in a specified directory and all subdirectories; /b use bare format (no heading information or summary)
 dir n:\*cred* /s /b
 
@@ -43,8 +43,8 @@ New-PSDrive -Name "N" -Root "\\<ip>\Finance" -PSProvider "FileSystem" -Credentia
 # Searching for specific Strings can be done the following 
 Get-ChildItem -Recurse -Path N:\ -Include *cred* -File
 
-# Using "Select-String" is Sililar to greping
-Get-ChildItem -Recurese -Path N:\ | Select-String "cred" -List
+# Using "Select-String" is similar to grep
+Get-ChildItem -Recurse -Path N:\ | Select-String "cred" -List
 
 
 ```

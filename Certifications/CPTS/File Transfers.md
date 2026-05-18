@@ -20,7 +20,7 @@ General Notes:
 - Base64 encoding/decoding using Certuitl tool
 ![[file_transfer_techniques.png]]
 
-- PowerShell -° System.Net.WebClient can be used to download via HTTP, HTTPS or FTP
+- PowerShell `System.Net.WebClient` can be used to download via HTTP, HTTPS or FTP
 
 
 ```Powershell
@@ -210,7 +210,7 @@ scp /etc/passwd htb-student@10.129.86.90:/home/htb-student/
 ```
 
 
-## Transfering Files with Code 
+## Transferring Files with Code 
 
 
 ```bash
@@ -306,7 +306,7 @@ PS C:\htb> Copy-Item -Path C:\samplefile.txt -ToSession $Session -Destination C:
 ```
 
 
-## Monting a Linux Folder Using rdesktop 
+## Mounting a Linux Folder Using rdesktop 
 
 
 ```bash

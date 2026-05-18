@@ -13,7 +13,7 @@ tags: [basics, protocol, ipmi]
 		- calvin
 	- HP iLO
 		- Administrator
-		- randomized 8-character string consiting of numbers and upercase letters
+		- randomized 8-character string consisting of numbers and uppercase letters
 	- Supermicro IPMI 
 		- ADMIN
 		- ADMIN
@@ -21,7 +21,7 @@ tags: [basics, protocol, ipmi]
 ### Footprinting 
 
 ```bash
-sudo nmpa- -sU --script ipmi-verison -p 623 ilo.inlanefreight.local
+sudo nmap -sU --script ipmi-version -p 623 ilo.inlanefreight.local
 
 # Using Metasploit 
 use auxiliary/scanner/ipmi/ipmi_version

@@ -73,7 +73,7 @@ nc -lvnp 1234 #listen with Netcat on a port for the reverse shell
 
 
 ```
-dpgk -l #check installed software
+dpkg -l #check installed software
 sudo -l 
 ```
 
@@ -121,10 +121,10 @@ md5sum shell
 nmap -sV --open -oA nibbles_initial_scan <ip> 
 nmap -p- --open -oA nibbles_full_tcp_scan <ip> 
 
-nmap -sC -p 22.80 -oA nibbbles_script_scan <ip>
+nmap -sC -p 22,80 -oA nibbles_script_scan <ip>
 
 # Getting a TTY shell
-python3 -c 'import pty; pty.spawn("/bin/bash")
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
 

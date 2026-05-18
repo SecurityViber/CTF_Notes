@@ -16,20 +16,17 @@ tags: [basics, protocol, dns]
 /etc/bind/named.conf.options
 /etc/bind/named.conf.log
 
-# bind9 local configuration
-/etc/bind/named.conf.local
-
 # Footprinting the service 
 dig ns inlanefreight.htb @<ip> 
-dig CH TXT versionbind <ip>
+dig CH TXT version.bind <ip>
 dig any inlanefreight.htb @<ip>
 
 # Footprinting
-# NS request to the specifici nameserver
+# NS request to the specific nameserver
 dig ns <domain.tld> @<nameserver> 
 
 # ANY request to the specific nameserver 
-dig any <domain.tld> @<nameserverv>
+dig any <domain.tld> @<nameserver>
 
 # AXFR request to the specific nameserver 
 dig axfr <domain.tld> @<nameserver>

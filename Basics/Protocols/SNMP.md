@@ -22,10 +22,10 @@ tags: [basics, protocol, snmp]
 snmpwalk -v 2c -c public ip 1.3.6.1.2.1.1.5.0
 
 # Using tool onesixtyone
-onesyxtyone -c dict.txt <ip>
+onesixtyone -c dict.txt <ip>
 
 snmpwalk -v2c -c <community string> <FQDN/IP> 
-onesixtyone -c <community-strings.loist <FQDN/IP>
+onesixtyone -c community-strings.list <FQDN/IP>
 braa <community string>@<FQDN/IP>:.1.*
 
 

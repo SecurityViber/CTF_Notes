@@ -6,8 +6,6 @@ tags: [cdsa, htb, incident-response]
 
 
 
-#sdfsdfsdf
-
 
 
 The 7 stages of the cyberkillchain
@@ -103,13 +101,3 @@ Post-Incident Activity Stage
 		- What preventive measures should be put in place to prevent similar incidents in the future?
 		- What tools and resources are needed to detect and analyze similar incidents in the future?
 
-
-# blsflsdfsdf
-## sfdsdfsd
-#### sfsdfsd
-
-
-
-```js
-console.log("blablabla")
-```
