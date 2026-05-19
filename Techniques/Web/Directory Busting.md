@@ -38,3 +38,21 @@ gobuster dns -d inlanefreight.com -w /usr/share/SecLIsts/Discovery/DNS/namelist.
 
 
 ## FFuF
+
+
+## Virtual Host Enumeration 
+
+![[virtual_hosts_overview.png]]
+
+
+![[virtual_hosts_diagram.png]]
+
+VHost discovery looks for additional sites being served from the same IP but only when the right `Host:` header is supplied. Common tools:
+
+- gobuster
+- Feroxbuster
+- ffuf
+
+```bash
+gobuster vhost -u http://<target_IP_address> -w <wordlist_file> --append-domain
+```

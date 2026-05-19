@@ -3,11 +3,20 @@ tags: [basics, protocol, dns]
 ---
 
 
-> [!info] See also: [[Basics/Techniques/DNS Records|DNS Records (technique)]]
+## DNS Overview 
 
+DNS Zone file structure:
+![[dns_zone_file.png]]
 
+Record types:
+![[dns_record_types.png]]
 
-## DNS 
+DNS Tools:
+![[dns_tools.png]]
+
+dig options:
+![[dig_tool_options.png]]
+
 
 ```bash 
 # bind9 config files 
@@ -35,7 +44,19 @@ dnsenum --dnsserver <nameserver> --enum -p 0 -s 0 -o found_subdomains.txt -f ~/s
 ```
 
 
+## DNS Zone Transfer 
+
+![[dns_zone_transfer.png]]
+
+A misconfigured DNS server may serve `AXFR` to anyone, leaking the full zone file:
+
+```bash
+dig axfr @nsztm1.digi.ninja zonetransfer.me
+```
+
+
 ## Common Tools 
+
 ### Essentials
 - dig
 - host
@@ -50,7 +71,23 @@ dnsenum --dnsserver <nameserver> --enum -p 0 -s 0 -o found_subdomains.txt -f ~/s
 - massdns
 
 
-## Basic investigation commands
+## Subdomain enumeration 
+
+Tools you could use for DNS enumeration:
+- dnsenum
+- fierce
+- dnsrecon
+- amass
+- assetfinder
+- puredns
+
+
+```bash
+dnsenum --enum inlanefreight.com -f /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -r
+```
+
+
+## Basic Investigation Commands
 
 
 ```sh
@@ -62,3 +99,9 @@ dig TXT _acme-challenge.example.com @8.8.8.8
 
 # TXT records using nslookup using the dns server 8.8.8.8 
 nslookup -type=TXT _acme-challenge.example.com 8.8.8.8
+```
+
+
+## Defensive Reading
+
+- [Tips to Protect the DNS from Data Exfiltration (DarkReading)](https://www.darkreading.com/cyber-risk/tips-to-protect-the-dns-from-data-exfiltration)

@@ -3,7 +3,7 @@ tags: [basics, protocol, database, mysql]
 ---
 
 
-> [!info] See also: [[SQLMap]]
+> [!info] See also: [[SQLMap]] · [[SQL Injection]]
 
 
 ## Overview

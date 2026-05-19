@@ -3,7 +3,7 @@ tags: [basics, technique, shell]
 ---
 
 
-> [!info] See also: [[Shells and Payloads]] · [[Shell & Payloads]]
+> [!info] See also: [[Shells and Payloads]]
 
 
 Whenever you want to set up a reverse shell you need a listening port on your attacker machine:

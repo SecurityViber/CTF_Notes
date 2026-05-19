@@ -3,7 +3,7 @@ tags: [basics, technique, password]
 ---
 
 
-> [!info] See also: [[John The Ripper]] · [[Techniques/Password Cracking/Password Attacks]]
+> [!info] See also: [[John The Ripper]] · [[Hashcat]] · [[Techniques/Password Cracking/Password Attacks]]
 
 
 
@@ -32,7 +32,8 @@ hashid '$2y$10$IT4k5kmSGvHSO9d6M/1w0eYiB5Ne9XzArQRFJTGThNiy/yBtkIj12'
 # or Hashidentifier 
 hash-identifier '$2y$10$IT4k5kmSGvHSO9d6M/1w0eYiB5Ne9XzArQRFJTGThNiy/yBtkIj12'
 
-
+# hashid also outputs the matching hashcat mode number
+hashid '$DCC2$10240#tom#e4e938d12fe5974dc42a90120bd9c90f' -m
 ```
 
 ## Generating Wordlists 
@@ -82,8 +83,6 @@ python pdf2john.py inventory.pdf
 
 # Properly extracting the hash from an output 
 7z2john hashcat.7z| cut -f2 -d ":" > hash.txt
-
-
 ```
 
 
@@ -92,56 +91,4 @@ python pdf2john.py inventory.pdf
 - [pwntools](https://pypi.org/project/pwntools/) python package that can be used for CTF's regarding pwn challenges
 - [Hashcat Documentation](https://hashcat.net/wiki/doku.php?id=example_hashes)
 - [HashID](https://github.com/psypanda/hashID) Is an identifier tool, which helps you to figure out what hash you are working with
-
-
-```bash 
-# Using hashid to receive the hash type and also the corresponding hashcat module 
-hashid '$DCC2$10240#tom#e4e938d12fe5974dc42a90120bd9c90f' -m
-```
-
-
-## Working with Hashcat
-
-```bash
-
-# Getting example hashes for testing 
-hashcat --example-hashes
-
-# Running a Benchmark Check 
-hashcat -b -m 0
-
-# Hashcat Syntax 
-hashcat -a 0 -m <hash type> <hash file> <wordlist>
-
-# Syntax Combination Attack
-hashcat -a 1 -m <hash type> <hash file> <wordlist1> <wordlist2> 
-
-# Mask Attacks -> Used to generate words mathcing a specific pattern; -a 3 means its a brute force attack here
-hashcat -a 3 -m 0 md5_mask_example_hash -1 01 'ILFREIGHT?l?l?l?l?l20?1?d'
-
-# Hybrid Mode - multiple modes can be ued toghter for a fine-tuned wordlist creation
-hashcat -a 6 -m 0 hybrid_hash /opt/useful/seclists/Passwords/Leaked-Databases/rockyou.txt '?d?s'
-
-# Hybrid Mask + Wordlist -> Attack Mode 7
-hashcat -a 7 -m 0 hybrid_hash_prefix -1 01 '20?1?d' /opt/useful/seclists/Passwords/Leaked-Databases/rockyou.txt
-
-# In hashcat you can create your own rules, which can be used for super sophisticated
-# Password cracking. Here an Example 
-
-# Crafting the rule which does the following: Uppercase, substitute o-0 i-1 e-3 s-5 a-@ and then appends 2019
-echo 'c so0 si1 se3 ss5 sa@ $2 $0 $1 $9' > rule.txt
-
-# Craft the password you want to have as your base 
-echo 'password' > test.txt 
-
-# Use Hashcat to create the passwords based on your rule 
-hashcat -r rule.txt test.txt --stdout
-
-# Cracking passwords based on your rule can be done like the following 
-hashcat -a 0 -m 100 hash /usr/share/seclist/Passwords/LeakedPasswords/rockyou.txt -r rule.txt 
-
-# You can find the default rules under 
-ls -l /usr/share/hashcat/rules
-
-
-```
+- See [[Hashcat]] for full hashcat workflows (rules, masks, hybrid attacks).
