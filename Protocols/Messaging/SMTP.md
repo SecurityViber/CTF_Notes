@@ -3,7 +3,7 @@ tags: [basics, protocol, smtp, mail]
 ---
 
 
-> [!info] See also: [[Mail]]
+> [!info] See also: [[Mail]] · [[swaks]] · [[smtp-user-enum]]
 
 
 - Accepts request on Port 25, but newer versions take port 587
@@ -25,3 +25,10 @@ sudo nmap <ip> -p25 --script smtp-open-relay -v
 # Enumerating users 
 smtp-user-enum -M VRFY -U /usr/share/wordlists/metasploit/unix_users.txt -t <ip>
 ```
+
+
+## Tools to interact with the service 
+
+- [[swaks]] — Swiss Army Knife for SMTP (sending, auth, relay, TLS testing)
+- [[smtp-user-enum]] — VRFY/EXPN/RCPT user enumeration
+- See [[Mail]] for client-side tooling

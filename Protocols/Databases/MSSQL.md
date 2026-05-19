@@ -3,7 +3,7 @@ tags: [basics, protocol, database, mssql]
 ---
 
 
-> [!info] See also: [[SQLMap]]
+> [!info] See also: [[SQLMap]] · [[Impacket]] · [[sqsh]]
 
 
 
@@ -45,14 +45,18 @@ GO
 ```
 
 
-Tools to use:
-- mssql-cli
-- SQL Server PowerShell
-- HeidiSQL
-- SQLPro
-- Impacket's mssqlclient.py -> Usually most useful one
+## Tools to interact with the service 
 
-Default System Databases
+- [[sqsh]] — Linux CLI client (via FreeTDS)
+- `sqlcmd` — Microsoft's official client (Windows / cross-platform)
+- mssql-cli — Microsoft's modern Python-based CLI
+- [[Impacket]] — `mssqlclient.py` is usually the most useful one
+- SQL Server PowerShell — `Invoke-Sqlcmd`
+- HeidiSQL — GUI
+- SQLPro — GUI
+
+
+## Default System Databases
 - master
 - model
 - msdb
@@ -61,11 +65,11 @@ Default System Databases
 
 Default Port: 1433
 
-### Footprinting
+
+## Footprinting
 
 
 ```bash
-
 # Nmap scanning
 sudo nmap --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER -sV -p 1433 10.129.201.248
 

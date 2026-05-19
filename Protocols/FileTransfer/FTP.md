@@ -3,6 +3,8 @@ tags: [basics, protocol, ftp]
 ---
 
 
+> [!info] See also: [[lftp]] · [[ncftp]]
+
 
 ## General Information 
 - Port: 21
@@ -52,8 +54,8 @@ get
 - Common misconfiguration with anonymous login
 
 ## Tools to interact with the service 
-- ftp
-- lftp
-- ncftp
-- filezilla
-- crossftp
+- `ftp` — standard CLI client
+- [[lftp]] — feature-rich CLI client (parallel transfers, mirroring, FTPS/SFTP)
+- [[ncftp]] — friendlier CLI client with bookmarks + helpers
+- filezilla — GUI client
+- crossftp — GUI client

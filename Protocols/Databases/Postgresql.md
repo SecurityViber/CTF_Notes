@@ -6,6 +6,12 @@ tags: [basics, protocol, database, postgresql]
 > [!info] See also: [[SQLMap]]
 
 
+## Tools to interact with the service
+
+- `psql` — official interactive PostgreSQL CLI (commands documented below)
+- pgAdmin — GUI
+- DBeaver — cross-platform GUI
+
 
 ## Connection
 ```bash

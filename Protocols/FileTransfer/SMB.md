@@ -3,7 +3,7 @@ tags: [basics, protocol, smb]
 ---
 
 
-> [!info] See also: [[NetExec]]
+> [!info] See also: [[smbclient]] · [[SMBMap]] · [[rpcclient]] · [[NetExec]] · [[Impacket]]
 
 
 
@@ -92,12 +92,11 @@ queryuser 0x3e9
 
 ## Tools to interact with the service 
 
-- smbclient
-- CrackMapExec
-- SMBMap
-- Impacket
-- psexec.py
-- smbexec.py
+- [[smbclient]] — Samba CLI client
+- [[NetExec]] (formerly CrackMapExec) — mass enumeration / credential spraying
+- [[SMBMap]] — share + permission enumerator
+- [[Impacket]] — toolkit including `psexec.py`, `smbexec.py`, `wmiexec.py`, `smbserver.py`, `secretsdump.py`
+- [[rpcclient]] — interactive MS-RPC over SMB
 
 ## Well known vulnerabilities 
 
