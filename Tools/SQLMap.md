@@ -3,7 +3,7 @@ tags: [basics, tool, sql-injection]
 ---
 
 
-> [!info] See also: [[MySQL]] · [[MSSQL]] · [[Postgresql]] · [[SQL INJECTION]]
+> [!info] See also: [[MySQL]] · [[MSSQL]] · [[Postgresql]] · [[SQL Injection]]
 
 
 
