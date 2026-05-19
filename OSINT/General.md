@@ -10,6 +10,11 @@ tags: [basics, technique, osint, recon]
 ![[passive_reconnaissance.png]]
 
 
+## Enumeration Mindmap
+
+![[enumeration_mindmap.png]]
+
+
 ## WHOIS
 
 ![[whois_lookup.png]]

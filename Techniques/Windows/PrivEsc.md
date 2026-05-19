@@ -6,6 +6,12 @@ tags: [basics, technique, windows, privesc]
 
 Goal of Windows PrivEsc is to escalate from a low-privilege user to `Local Administrators` or `NT AUTHORITY\SYSTEM`.
 
+
+## UAC Elevation Flow
+
+![[uac_elevation_flowchart.png]]
+
+
 ## Initial Enumeration
 
 ```cmd

@@ -6,6 +6,11 @@ tags: [basics, protocol, mail]
 > [!info] See also: [[SMTP]] · [[swaks]] · [[sendEmail]] · [[mutt]]
 
 
+## IMAP / POP3 Protocol Cheat Sheet
+
+![[imap_pop3_commands.png]]
+
+
 ## Tools to interact with the service 
 
 CLI / scriptable:

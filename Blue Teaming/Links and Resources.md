@@ -24,6 +24,12 @@ tags: [cdsa, htb, resources]
 - [Sysmon Config File - sysmon modular](https://github.com/olafhartong/sysmon-modular)
 - [MITRE ATT&CK](https://attack.mitre.org/)
 
+
+## cPanel / Hosting Logs
+
+- [cPanel Logs: Access, Apache, Email, Error, FTP, MySQL, WHM](https://www.inmotionhosting.com/support/edu/cpanel/cpanel-logs-for-access-apache-email-error-ftp-mysql-whm/)
+- [cPanel Log Files (official docs)](https://docs.cpanel.net/knowledge-base/cpanel-product/the-cpanel-log-files/)
+
 ## IOCs
 
 - [IOC Editor by Mandiant](https://fireeye.market/apps/S7cWpi9W)

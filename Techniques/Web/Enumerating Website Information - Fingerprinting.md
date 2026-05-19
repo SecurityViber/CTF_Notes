@@ -6,6 +6,11 @@ tags: [basics, technique, web, recon, fingerprinting]
 > [!info] See also: [[EyeWitness]] · [[Directory Busting]]
 
 
+## Why Fingerprint
+
+![[web_fingerprinting_benefits.png]]
+
+
 ## Techniques 
 
 ![[web_fingerprinting_techniques.png]]

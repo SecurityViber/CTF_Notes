@@ -13,6 +13,11 @@ General notes from various techniques:
 - Base64 encoding/decoding using Certutil tool
 
 
+### Astaroth — fileless attack chain (reference)
+
+![[astaroth_infection_chain.png]]
+
+
 ## Reference 
 
 - [Microsoft: Dismantling a Fileless Campaign - Astaroth](https://www.microsoft.com/en-us/security/blog/2019/07/08/dismantling-a-fileless-campaign-microsoft-defender-atp-next-gen-protection-exposes-astaroth-attack/)
@@ -94,6 +99,8 @@ file <filename>
 
 
 ## Windows Downloads via PowerShell
+
+![[powershell_webclient_methods.png]]
 
 ```powershell
 # Standard download

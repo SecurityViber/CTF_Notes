@@ -121,6 +121,10 @@ With Socat ssh tunneling is not required.
 
 ![[socat_redirection_bind_shell.png]]
 
+
+![[socat_pivot_metasploit.png]]
+
+
 ## SSH for Windows: plink.exe
 Plink, short for PuTTY Link, is a Windows command-line SSH tool that comes as part of the PuTTY package when installed. 
 

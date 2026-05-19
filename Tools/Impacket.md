@@ -3,7 +3,7 @@ tags: [basics, tool, framework, smb, mssql, kerberos]
 ---
 
 
-> [!info] See also: [[SMB]] · [[MSSQL]] · [[Active Directory]] · [[NetExec]] · [[Techniques/Windows/Password Hunting]]
+> [!info] See also: [[SMB]] · [[MSSQL]] · [[Active Directory]] · [[NetExec]] · [[Windows Password Hunting]]
 
 
 [Impacket](https://github.com/fortra/impacket) is a Python collection of MS protocol implementations. Most pentest distros ship the scripts under `/usr/share/doc/python3-impacket/examples/` or as `impacket-*` wrappers in `$PATH`.

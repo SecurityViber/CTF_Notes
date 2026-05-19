@@ -229,7 +229,6 @@ EOF
 
 ## References
 
-- [[Footprinting]] — general service enumeration methodology
 - [[SQL Injection]] — exploiting MySQL via injection vectors
 - [HackTricks - MySQL](https://book.hacktricks.xyz/network-services-pentesting/pentesting-mysql)
 - [PayloadsAllTheThings - MySQL Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection#mysql)
