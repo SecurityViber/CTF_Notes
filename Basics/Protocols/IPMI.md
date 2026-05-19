@@ -2,7 +2,6 @@
 tags: [basics, protocol, ipmi]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 - Port 623 

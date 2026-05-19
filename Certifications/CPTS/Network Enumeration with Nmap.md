@@ -7,7 +7,6 @@ tags:
   - ids-ips
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 **--> Currently at lesson "Host and Port Scanning"**
 

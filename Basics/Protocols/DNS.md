@@ -2,7 +2,6 @@
 tags: [basics, protocol, dns]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Basics/Techniques/DNS Records|DNS Records (technique)]]
 

@@ -2,7 +2,6 @@
 tags: [basics, tool, curl]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 

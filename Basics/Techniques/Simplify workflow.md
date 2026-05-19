@@ -2,7 +2,6 @@
 tags: [basics, workflow]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 ```bash

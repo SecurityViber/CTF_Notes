@@ -2,7 +2,6 @@
 tags: [basics, technique, wifi, wireless]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 

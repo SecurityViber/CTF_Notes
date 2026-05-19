@@ -2,7 +2,6 @@
 tags: [cpts, htb, reading-list]
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 
 - [Equifax Hack](https://www.zdnet.com/article/us-government-releases-post-mortem-report-on-equifax-hack/)

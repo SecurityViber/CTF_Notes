@@ -2,7 +2,6 @@
 tags: [basics, technique, network]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Wireshark]] · [[Nmap]]
 

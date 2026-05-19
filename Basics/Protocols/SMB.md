@@ -2,7 +2,6 @@
 tags: [basics, protocol, smb]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[NetExec]]
 

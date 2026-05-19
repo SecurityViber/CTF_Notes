@@ -5,7 +5,6 @@ tags:
   - "#interactive_shells"
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 
 

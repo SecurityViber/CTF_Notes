@@ -6,7 +6,6 @@ tags:
   - netstat
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 
 Credential Stuffing: Leveraging Stolen Data for Unauthorized Access 

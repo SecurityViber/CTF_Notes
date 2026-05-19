@@ -2,7 +2,6 @@
 tags: [basics, reference]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 | Term          | Definition                                                                    |

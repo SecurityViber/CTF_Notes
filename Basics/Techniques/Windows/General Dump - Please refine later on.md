@@ -2,7 +2,6 @@
 tags: [basics, technique, windows, wip]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 Important Registry Hives to drop

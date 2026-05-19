@@ -2,7 +2,6 @@
 tags: [basics, tool, recon]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Enumerating Website Information - Fingerprinting]]
 

@@ -2,7 +2,6 @@
 tags: [basics, technique, windows, privesc]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 Goal of Windows PrivEsc is to escalate from a low-privilege user to `Local Administrators` or `NT AUTHORITY\SYSTEM`.

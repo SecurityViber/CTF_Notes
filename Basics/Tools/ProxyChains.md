@@ -2,7 +2,6 @@
 tags: [basics, tool, proxy, pivoting]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Pivoting, Tunneling and Port Forwarding]] · [[Proxies]]
 

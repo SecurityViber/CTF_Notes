@@ -2,7 +2,6 @@
 tags: [basics, technique, windows, active-directory]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[NetExec]]
 

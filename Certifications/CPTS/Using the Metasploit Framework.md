@@ -6,7 +6,6 @@ tags:
   - packer
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 
 ![[metasploit_overview.png]]

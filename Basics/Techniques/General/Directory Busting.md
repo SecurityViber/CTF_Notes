@@ -2,7 +2,6 @@
 tags: [basics, technique, web, recon]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[FfuF]]
 

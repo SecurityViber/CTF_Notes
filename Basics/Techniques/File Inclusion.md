@@ -2,7 +2,6 @@
 tags: [basics, technique, web, lfi, rfi]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 - **LFI** (Local File Inclusion) — server reads a local file whose path is controlled by user input

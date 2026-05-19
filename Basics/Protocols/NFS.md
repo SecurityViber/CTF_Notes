@@ -2,7 +2,6 @@
 tags: [basics, protocol, nfs]
 ---
 
-[[Basics/Index|← Basics]]
 
 ## Table of physical filesystems on an NFS server
 

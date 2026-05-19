@@ -2,7 +2,6 @@
 tags: [basics, technique, web, recon, fingerprinting]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[EyeWitness]] · [[Information Gathering - Web Edition]]
 

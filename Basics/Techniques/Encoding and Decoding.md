@@ -2,7 +2,6 @@
 tags: [basics, technique]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 Here some common encoding and decoding commands.

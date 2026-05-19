@@ -2,7 +2,6 @@
 tags: [basics, tool, network]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[SMB]] · [[WinRM]]
 

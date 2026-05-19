@@ -2,7 +2,6 @@
 tags: [basics, technique, linux, password]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Password Attacks]] · [[Password Cracking]]
 

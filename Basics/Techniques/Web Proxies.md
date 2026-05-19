@@ -2,7 +2,6 @@
 tags: [basics, technique, web, proxy]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Proxies]] · [[ProxyChains]]
 

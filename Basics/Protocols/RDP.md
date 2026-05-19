@@ -2,7 +2,6 @@
 tags: [basics, protocol, rdp]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[xfreerdp3]]
 

@@ -2,7 +2,6 @@
 tags: [basics, technique, password]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Certifications/CPTS/Password Attacks|Password Attacks (CPTS — detailed)]] · [[Hydra]] · [[Medusa]] · [[John The Ripper]]
 

@@ -22,7 +22,6 @@ tags:
   - RAM
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 
 ![[linux_shadow_file_format.png]]

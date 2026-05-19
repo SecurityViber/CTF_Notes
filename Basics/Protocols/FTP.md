@@ -2,7 +2,6 @@
 tags: [basics, protocol, ftp]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 ## General Information 

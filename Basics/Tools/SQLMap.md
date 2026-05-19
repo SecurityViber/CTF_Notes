@@ -2,7 +2,6 @@
 tags: [basics, tool, sql-injection]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[MySQL]] · [[MSSQL]] · [[Postgresql]] · [[SQL INJECTION]]
 

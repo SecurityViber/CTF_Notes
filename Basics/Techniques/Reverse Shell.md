@@ -2,7 +2,6 @@
 tags: [basics, technique, shell]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Shells and Payloads]] · [[Shell & Payloads]]
 

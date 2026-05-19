@@ -2,7 +2,6 @@
 tags: [basics, networking]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 

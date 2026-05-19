@@ -2,7 +2,6 @@
 tags: [basics, protocol, database, oracle]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 ## Oracle TNS 

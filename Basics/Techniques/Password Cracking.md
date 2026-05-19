@@ -2,7 +2,6 @@
 tags: [basics, technique, password]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[John The Ripper]] · [[Password Attacks]]
 

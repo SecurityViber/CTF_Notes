@@ -2,7 +2,6 @@
 tags: [basics, technique, linux]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 Here some comman commands you can use to work with Processes 

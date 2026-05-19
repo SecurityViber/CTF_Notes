@@ -2,7 +2,6 @@
 tags: [cdsa, htb, soc, siem]
 ---
 
-[[Certifications/CDSA/Index|← CDSA]]
 
 
 

@@ -2,7 +2,6 @@
 tags: [basics, tool, winrm]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[WinRM]]
 

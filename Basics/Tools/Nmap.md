@@ -2,7 +2,6 @@
 tags: [basics, tool, recon, scanning]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Network Enumeration with Nmap]] · [[Network Analysis]]
 

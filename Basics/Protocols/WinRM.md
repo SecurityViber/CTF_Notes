@@ -2,7 +2,6 @@
 tags: [basics, protocol, winrm]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Evil-Winrm]]
 

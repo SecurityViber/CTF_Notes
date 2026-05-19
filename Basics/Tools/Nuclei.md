@@ -2,7 +2,6 @@
 tags: [basics, tool, scanning]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 This tool can be used for some vulnearability scanning. It has slowly become one of the standard tools to use. 

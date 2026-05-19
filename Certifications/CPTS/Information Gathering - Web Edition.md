@@ -13,7 +13,6 @@ tags:
   - tools
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 
 

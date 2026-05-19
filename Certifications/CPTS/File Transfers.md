@@ -2,7 +2,6 @@
 tags: [cpts, htb, file-transfer]
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 > [!info] See also: [[Basics/Techniques/File Transfers|File Transfers (Basics)]]
 

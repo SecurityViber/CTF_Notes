@@ -8,12 +8,12 @@ Personal knowledge base for penetration testing, CTF challenges, and security ce
 
 ## Core Knowledge
 
-→ [[Basics/Index|Basics]] — Protocols, tools, techniques, and OS-specific notes
+Basics — Protocols, tools, techniques, and OS-specific notes
 
 ## Certifications
 
-→ [[Certifications/CPTS/Index|CPTS]] — Certified Penetration Testing Specialist (HTB Academy)
-→ [[Certifications/CDSA/Index|CDSA]] — Certified Defensive Security Analyst (HTB Academy)
+CPTS — Certified Penetration Testing Specialist (HTB Academy)
+CDSA — Certified Defensive Security Analyst (HTB Academy)
 
 ## Practice
 

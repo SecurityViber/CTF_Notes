@@ -2,7 +2,6 @@
 tags: [basics, technique, pivoting, tunneling, port-forwarding]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[ProxyChains]] · [[Proxies]]
 

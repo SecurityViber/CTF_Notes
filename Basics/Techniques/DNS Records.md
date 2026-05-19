@@ -2,7 +2,6 @@
 tags: [basics, technique, dns]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[DNS]]
 

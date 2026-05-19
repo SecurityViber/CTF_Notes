@@ -2,7 +2,6 @@
 tags: [basics, tool, brute-force]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Password Attacks]] · [[Login Brute Forcing]]
 

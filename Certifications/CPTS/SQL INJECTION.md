@@ -4,7 +4,6 @@ tags:
   - SQL
 ---
 
-[[Certifications/CPTS/Index|← CPTS]]
 
 
 

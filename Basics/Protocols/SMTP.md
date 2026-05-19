@@ -2,7 +2,6 @@
 tags: [basics, protocol, smtp, mail]
 ---
 
-[[Basics/Index|← Basics]]
 
 > [!info] See also: [[Mail]]
 

@@ -2,7 +2,6 @@
 tags: [basics, resources]
 ---
 
-[[Basics/Index|← Basics]]
 
 
 ## General Helper 
