@@ -2,11 +2,13 @@
 tags: [cdsa, htb, windows, event-logs]
 ---
 
+> [!info] See also: [[Active Directory]] · [[Incident Handling]] · [[Links and Resources]]
 
-> [!info] See also: [[Basics/Techniques/Windows/Active Directory|Active Directory (Basics)]]
 
+## Event Structure
 
-Primary components of an Event in the Windows Event Log:
+Primary components of an event in the Windows Event Log:
+
 ![[windows_event_basic_structure.png]]
 
 ## Key Event Logs
@@ -50,7 +52,7 @@ Get-WinEvent -ListLog * | Where-Object {$_.RecordCount -gt 0} |
   ForEach-Object { Get-WinEvent -LogName $_.LogName -ErrorAction SilentlyContinue | 
     Where-Object {$_.Id -eq 4698} }
 
-# Export to XML for analysis
+# Export the Security log to an .evtx file for offline analysis
 wevtutil epl Security C:\security.evtx
 ```
 

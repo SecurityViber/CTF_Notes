@@ -1,0 +1,129 @@
+#separator:Pipe
+#html:true
+#notetype:Basic
+#columns:Front|Back|Deck|Tags
+#deck column:3
+#tags column:4
+Name the typical roles in a SOC.|SOC Director<br>SOC Manager<br>Tier 1 Analyst<br>Tier 2 Analyst<br>Tier 3 Analyst<br>Detection Engineer<br>Incident Responder<br>Threat Intelligence Analyst<br>Security Engineer<br>Compliance and Governance Specialist<br>Security Awareness and Training Coordinator|CDSA::SOC|cdsa soc list
+Which SOC roles make up the three analyst tiers?|Tier 1 Analyst, Tier 2 Analyst, Tier 3 Analyst|CDSA::SOC|cdsa soc
+Name the 12 steps of the ideal triaging process, in order.|1. Initial Alert Review<br>2. Alert Classification<br>3. Alert Correlation<br>4. Enrichment of Alert Data<br>5. Risk Assessment<br>6. Contextual Analysis<br>7. Incident Response Planning<br>8. Consultation with IT Operations<br>9. Response Execution<br>10. Escalation<br>11. Continuous Monitoring<br>12. De-escalation|CDSA::SOC|cdsa soc triage list
+What is the first step of the triaging process?|Initial Alert Review|CDSA::SOC|cdsa soc triage
+What is the last step of the triaging process?|De-escalation|CDSA::SOC|cdsa soc triage
+Which triaging step follows Alert Correlation?|Enrichment of Alert Data|CDSA::SOC|cdsa soc triage
+Which triaging step follows Enrichment of Alert Data?|Risk Assessment|CDSA::SOC|cdsa soc triage
+Which triaging step follows Risk Assessment?|Contextual Analysis|CDSA::SOC|cdsa soc triage
+Which triaging step comes directly before Response Execution?|Consultation with IT Operations|CDSA::SOC|cdsa soc triage
+Where does Escalation sit in the triaging process?|Step 10: after Response Execution, before Continuous Monitoring|CDSA::SOC|cdsa soc triage
+Which three triaging steps come after Response Execution?|Escalation, Continuous Monitoring, De-escalation|CDSA::SOC|cdsa soc triage
+Name the 7 stages of the Cyber Kill Chain, in order.|1. Reconnaissance<br>2. Weaponization<br>3. Delivery<br>4. Exploitation<br>5. Installation<br>6. Command and Control<br>7. Actions on Objectives|CDSA::Incident Handling|cdsa killchain list
+What happens in the Reconnaissance stage of the Cyber Kill Chain?|Initial stage: the attacker chooses a target and performs information gathering (OSINT etc.)|CDSA::Incident Handling|cdsa killchain
+Active vs. passive reconnaissance: what is the difference?|Active = interacting with the target network directly to map it out.<br>Passive = collecting information from outside sources without touching the target, staying undetected the whole time.|CDSA::Incident Handling|cdsa killchain recon comparison
+What does active reconnaissance involve?|Identify the target and the scope of the target network<br>Locate open ports<br>Identify the services running on the open ports<br>Map the entire network|CDSA::Incident Handling|cdsa killchain recon list
+What does passive reconnaissance involve?|Information gathering from web sources<br>Social media<br>Avoiding detection all the time|CDSA::Incident Handling|cdsa killchain recon list
+Which web sources are used in passive reconnaissance?|Job ads and company partners|CDSA::Incident Handling|cdsa killchain recon
+Which social media platforms are used in passive reconnaissance?|LinkedIn, Instagram, Facebook|CDSA::Incident Handling|cdsa killchain recon
+What is the defining constraint of passive reconnaissance?|Avoiding detection all the time|CDSA::Incident Handling|cdsa killchain recon
+Why do job ads count as reconnaissance material?|They reveal the technologies in use, since the posting names the systems the new hire has to work with|CDSA::Incident Handling|cdsa killchain recon
+What happens in the Weaponization stage of the Cyber Kill Chain?|Malware for initial access is developed and embedded into some type of exploit|CDSA::Incident Handling|cdsa killchain
+What are the properties of the malware built during Weaponization?|Lightweight, should not be detected by AV or EDR, and its goal is to provide persistent remote access|CDSA::Incident Handling|cdsa killchain
+What happens in the Delivery stage of the Cyber Kill Chain?|The exploit or payload is delivered to the victim, usually by phishing via email or phone|CDSA::Incident Handling|cdsa killchain
+What happens in the Exploitation stage of the Cyber Kill Chain?|The moment the exploit or delivered payload is triggered. The attacker attempts to execute code on the target to gain access or control.|CDSA::Incident Handling|cdsa killchain
+What happens in the Installation stage of the Cyber Kill Chain?|The initial stager is executed and running on the compromised machine|CDSA::Incident Handling|cdsa killchain
+Which techniques are typical for the Installation stage?|Droppers, backdoors, rootkits|CDSA::Incident Handling|cdsa killchain
+What is a dropper?|A small piece of code designed to install malware on the system and execute it|CDSA::Incident Handling|cdsa killchain malware
+How is a dropper delivered to the target?|Through various means such as email attachments, malicious websites or social engineering tactics|CDSA::Incident Handling|cdsa killchain malware
+What is a backdoor?|Malware designed to provide the attacker with ongoing access to the compromised system|CDSA::Incident Handling|cdsa killchain malware
+What can a backdoor be used for once it is installed?|Executing further attacks or stealing data from the compromised system|CDSA::Incident Handling|cdsa killchain malware
+What is a rootkit?|Malware designed to hide its presence on a compromised system|CDSA::Incident Handling|cdsa killchain malware
+Why are rootkits used in the Installation stage?|To evade detection by antivirus software and other security tools|CDSA::Incident Handling|cdsa killchain malware
+Which two ways can a backdoor or a rootkit reach the system?|1. Installed by the attacker during the Exploitation stage<br>2. Delivered through a dropper|CDSA::Incident Handling|cdsa killchain malware
+Droppers vs. Backdoors vs. Rootkits: what is the difference?|All three are Installation-stage malware with different jobs.<br>Dropper = installs the malware on the system and executes it.<br>Backdoor = gives the attacker ongoing access to the compromised system.<br>Rootkit = hides its presence to evade antivirus and other security tools.<br>Short form: install, access, hide.|CDSA::Incident Handling|cdsa killchain malware comparison
+What happens in the Command and Control stage of the Cyber Kill Chain?|The attacker establishes a remote access capability to the compromised machine|CDSA::Incident Handling|cdsa killchain
+What happens in the Actions stage of the Cyber Kill Chain?|The attacker pursues the actual objective, e.g. data exfiltration or gaining a higher level of privileges|CDSA::Incident Handling|cdsa killchain
+Weaponization vs. Delivery: what is the difference?|Weaponization = building the malware and embedding it in an exploit.<br>Delivery = getting that payload to the victim.|CDSA::Incident Handling|cdsa killchain comparison
+Exploitation vs. Installation: what is the difference?|Exploitation = the payload is triggered and code execution is attempted.<br>Installation = the stager is actually executing and running on the machine.|CDSA::Incident Handling|cdsa killchain comparison
+Which Cyber Kill Chain stage follows Exploitation?|Installation|CDSA::Incident Handling|cdsa killchain
+Which Cyber Kill Chain stage comes directly before Actions?|Command and Control|CDSA::Incident Handling|cdsa killchain
+Name the 4 stages of the Incident Handling Process. (NIST)|1. Preparation<br>2. Detection and Analysis<br>3. Containment, Eradication and Recovery<br>4. Post-Incident Activity|CDSA::Incident Handling|cdsa nist list
+Which two things does the Preparation phase build up?|1. Clear policies and documentation<br>2. Jump bag equipment<br>Plus hardening measures that prevent incidents in the first place.|CDSA::Incident Handling|cdsa nist preparation
+Which policies and documentation belong in the Preparation phase?|Contact info and roles of the IH team<br>Contact info for legal and compliance, management, IT support, comms and media relations, law enforcement, ISPs, facility management, external IR team<br>Incident response policy, plan and procedures<br>Incident information sharing policy and procedures<br>Baselines of systems and networks from a golden image in a clean state<br>Network diagrams<br>Organization-wide asset management database<br>On-demand user accounts with excessive privileges<br>Ability to buy hardware, software or external resources without full procurement<br>Forensic and investigative cheat sheets|CDSA::Incident Handling|cdsa nist preparation list
+What belongs in the Jump Bag?|Forensic laptop or workstation per team member<br>Digital forensic image acquisition and analysis tools<br>Memory capture and analysis tools<br>Live response capture and analysis<br>Log analysis tools<br>Network capture and analysis tools<br>Network cables and switches<br>Write blockers<br>Hard drives for forensic imaging<br>Power cables<br>Screwdrivers, tweezers and other hardware tools<br>IOC creator plus the ability to search IOCs across the organization<br>Chain of custody forms<br>Encryption software<br>Ticket tracking system<br>Secure facility for storage and investigation<br>Incident handling system independent of your organization infrastructure|CDSA::Incident Handling|cdsa nist preparation jumpbag list
+How should the on-demand high-privilege accounts from the Preparation phase be handled?|Enabled when an incident is confirmed during the initial investigation, disabled once it is over, with a mandatory password reset when disabling|CDSA::Incident Handling|cdsa nist preparation
+Why is antivirus disabled on the forensic workstations in the Jump Bag?|Malware will be tested on them. They must be handled appropriately so they do not introduce risk to the organization.|CDSA::Incident Handling|cdsa nist preparation jumpbag
+Why does Preparation include the ability to buy without a full procurement process?|During an incident you cannot wait weeks for approval. Waiting for a 500 dollar tool stalls the response.|CDSA::Incident Handling|cdsa nist preparation
+Which measures prepare an organization against incidents?|Endpoint hardening<br>Network protection<br>Privileged Identity Management<br>MFA<br>Password policies<br>Continuous vulnerability scans of the environment<br>User awareness training<br>Active Directory security assessment|CDSA::Incident Handling|cdsa nist preparation list
+Which questions should the Detection and Analysis phase answer?|What is the exploitation impact?<br>What are the exploitation requirements?<br>Can any business-critical systems be affected by the incident?<br>Are there any suggested remediation steps?<br>How many systems have been impacted?<br>Is the exploit being used in the wild?<br>Does the exploit have any worm-like capabilities?|CDSA::Incident Handling|cdsa nist detection list
+Name the three steps of the Containment, Eradication and Recovery stage, in order.|1. Containment<br>2. Eradication<br>3. Recovery|CDSA::Incident Handling|cdsa nist list
+What belongs to Containment?|Stopping the spread, with measures such as modifying C2 DNS names, rotating passwords, pulling network cables|CDSA::Incident Handling|cdsa nist containment
+What is the goal of Eradication?|Removing the root cause, such as the malware|CDSA::Incident Handling|cdsa nist containment
+Containment vs. Eradication: which comes first and why?|Containment comes first: stop the spread and cut the attacker off. Only then is the root cause removed in Eradication.|CDSA::Incident Handling|cdsa nist containment comparison
+What happens in the Recovery stage?|Systems are brought back to normal operation|CDSA::Incident Handling|cdsa nist containment
+How long can the Recovery stage take?|It can take months|CDSA::Incident Handling|cdsa nist containment
+Which questions should the final report in the Post-Incident Activity stage answer?|What happened and when?<br>How did the team perform against plans, playbooks, policies and procedures?<br>Did the business provide the necessary information and respond promptly? What can be improved?<br>What actions have been implemented to contain and eradicate the incident?<br>What preventive measures should prevent similar incidents in the future?<br>What tools and resources are needed to detect and analyze similar incidents in the future?|CDSA::Incident Handling|cdsa nist post-incident list
+Which deliverable defines the Post-Incident Activity stage?|The final report|CDSA::Incident Handling|cdsa nist post-incident
+Name the key Windows event logs for an analyst.|Security<br>System<br>Application<br>PowerShell/Operational<br>Sysmon|CDSA::Windows Event Logs|cdsa eventlogs list
+What is the path of the Security event log?|<code>%SystemRoot%\System32\winevt\Logs\Security.evtx</code>|CDSA::Windows Event Logs|cdsa eventlogs
+What does the Security event log capture?|Logons, object access, policy changes|CDSA::Windows Event Logs|cdsa eventlogs
+What does the System event log capture?|OS events, driver issues, service starts|CDSA::Windows Event Logs|cdsa eventlogs
+What is the file name of the PowerShell operational log?|<code>Microsoft-Windows-PowerShell%4Operational.evtx</code>|CDSA::Windows Event Logs|cdsa eventlogs
+What does the PowerShell operational log capture, and what is the catch?|Script execution. It needs to be enabled first.|CDSA::Windows Event Logs|cdsa eventlogs
+Which log captures process creation, network and file events?|The Sysmon operational log: <code>Microsoft-Windows-Sysmon%4Operational.evtx</code>|CDSA::Windows Event Logs|cdsa eventlogs sysmon
+Name the high-value Event IDs of the Security log.|4624 Successful logon<br>4625 Failed logon<br>4648 Logon with explicit credentials<br>4656 Object handle requested<br>4698 Scheduled task created<br>4720 User account created<br>4732 User added to local group<br>4768 Kerberos TGT requested<br>4769 Kerberos service ticket requested<br>4771 Kerberos pre-auth failed<br>4776 NTLM authentication attempt<br>7045 New service installed|CDSA::Windows Event Logs|cdsa eventlogs eventid list
+What does Event ID 4624 mean?|Successful logon|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 4625 mean?|Failed logon|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 4648 mean?|Logon with explicit credentials (runas)|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 4656 mean?|Object handle requested (file access)|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 4698 mean?|Scheduled task created|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 4720 mean?|User account created|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 4732 mean?|User added to local group|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 4768 mean?|Kerberos TGT requested (AS-REQ)|CDSA::Windows Event Logs|cdsa eventlogs eventid kerberos
+What does Event ID 4769 mean?|Kerberos service ticket requested (TGS-REQ)|CDSA::Windows Event Logs|cdsa eventlogs eventid kerberos
+What does Event ID 4771 mean?|Kerberos pre-authentication failed|CDSA::Windows Event Logs|cdsa eventlogs eventid kerberos
+What does Event ID 4776 mean?|NTLM authentication attempt|CDSA::Windows Event Logs|cdsa eventlogs eventid
+What does Event ID 7045 mean?|New service installed|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a successful logon?|4624|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a failed logon?|4625|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a logon with explicit credentials (runas)?|4648|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a requested object handle (file access)?|4656|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a created scheduled task?|4698|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a created user account?|4720|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a user added to a local group?|4732|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a Kerberos TGT request (AS-REQ)?|4768|CDSA::Windows Event Logs|cdsa eventlogs eventid kerberos
+Which Event ID logs a Kerberos service ticket request (TGS-REQ)?|4769|CDSA::Windows Event Logs|cdsa eventlogs eventid kerberos
+Which Event ID logs a failed Kerberos pre-authentication?|4771|CDSA::Windows Event Logs|cdsa eventlogs eventid kerberos
+Which Event ID logs an NTLM authentication attempt?|4776|CDSA::Windows Event Logs|cdsa eventlogs eventid
+Which Event ID logs a newly installed service?|7045|CDSA::Windows Event Logs|cdsa eventlogs eventid
+4768 vs. 4769: what is the difference?|4768 = Kerberos TGT requested (AS-REQ), the initial authentication.<br>4769 = Kerberos service ticket requested (TGS-REQ), access to a specific service.|CDSA::Windows Event Logs|cdsa eventlogs eventid kerberos comparison
+4771 vs. 4776: what is the difference?|4771 = Kerberos pre-authentication failed.<br>4776 = NTLM authentication attempt.<br>Different authentication protocols.|CDSA::Windows Event Logs|cdsa eventlogs eventid comparison
+4720 vs. 4732: what is the difference?|4720 = a user account was created.<br>4732 = an existing user was added to a local group.|CDSA::Windows Event Logs|cdsa eventlogs eventid comparison
+Name the logon types of Event 4624.|2 Interactive<br>3 Network<br>4 Batch<br>5 Service<br>7 Unlock<br>8 Network cleartext<br>10 RemoteInteractive<br>11 CachedInteractive|CDSA::Windows Event Logs|cdsa eventlogs logontype list
+What is logon type 2?|Interactive (local keyboard)|CDSA::Windows Event Logs|cdsa eventlogs logontype
+What is logon type 3?|Network (SMB, net use)|CDSA::Windows Event Logs|cdsa eventlogs logontype
+What is logon type 4?|Batch (scheduled task)|CDSA::Windows Event Logs|cdsa eventlogs logontype
+What is logon type 5?|Service logon|CDSA::Windows Event Logs|cdsa eventlogs logontype
+What is logon type 7?|Unlock workstation|CDSA::Windows Event Logs|cdsa eventlogs logontype
+What is logon type 8?|Network cleartext (IIS basic auth)|CDSA::Windows Event Logs|cdsa eventlogs logontype
+What is logon type 10?|RemoteInteractive (RDP)|CDSA::Windows Event Logs|cdsa eventlogs logontype
+What is logon type 11?|CachedInteractive (offline logon)|CDSA::Windows Event Logs|cdsa eventlogs logontype
+Which logon type indicates RDP?|Type 10, RemoteInteractive|CDSA::Windows Event Logs|cdsa eventlogs logontype
+Which logon type indicates a local logon at the keyboard?|Type 2, Interactive|CDSA::Windows Event Logs|cdsa eventlogs logontype
+Which logon type indicates a network logon such as SMB or net use?|Type 3, Network|CDSA::Windows Event Logs|cdsa eventlogs logontype
+Which logon type indicates a scheduled task?|Type 4, Batch|CDSA::Windows Event Logs|cdsa eventlogs logontype
+Which logon type indicates an offline logon with cached credentials?|Type 11, CachedInteractive|CDSA::Windows Event Logs|cdsa eventlogs logontype
+Logon type 3 vs. type 10: what is the difference?|Type 3 = Network, e.g. SMB or net use, no interactive session.<br>Type 10 = RemoteInteractive, an interactive RDP session.|CDSA::Windows Event Logs|cdsa eventlogs logontype comparison
+Logon type 2 vs. type 7: what is the difference?|Type 2 = Interactive, a fresh logon at the local keyboard.<br>Type 7 = the workstation was unlocked, the session already existed.|CDSA::Windows Event Logs|cdsa eventlogs logontype comparison
+Logon type 5 vs. type 4: what is the difference?|Type 5 = a service logging on.<br>Type 4 = a batch logon, i.e. a scheduled task.|CDSA::Windows Event Logs|cdsa eventlogs logontype comparison
+An attacker logs in over RDP: which Event ID and logon type do you look for?|Event ID 4624 with logon type 10 (RemoteInteractive)|CDSA::Windows Event Logs|cdsa eventlogs scenario
+You suspect credentials were sent in cleartext: which logon type points to it?|Type 8, Network cleartext, e.g. IIS basic authentication|CDSA::Windows Event Logs|cdsa eventlogs scenario
+You suspect persistence via a service: which Event ID do you hunt for?|7045, new service installed|CDSA::Windows Event Logs|cdsa eventlogs scenario
+You suspect persistence via a scheduled task: which Event ID do you hunt for?|4698, scheduled task created|CDSA::Windows Event Logs|cdsa eventlogs scenario
+You suspect a password spray: which Event ID do you count?|4625, failed logon|CDSA::Windows Event Logs|cdsa eventlogs scenario
+How do you list failed logon events with Get-WinEvent?|<code>Get-WinEvent -LogName Security &#124; Where-Object {$_.Id -eq 4625} &#124; Select-Object TimeCreated, Message &#124; Format-List</code>|CDSA::Windows Event Logs|cdsa eventlogs powershell
+How do you get all logon events from the last 24 hours?|<code>Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4624; StartTime=(Get-Date).AddDays(-1)}</code>|CDSA::Windows Event Logs|cdsa eventlogs powershell
+How do you export the Security log to an evtx file?|<code>wevtutil epl Security C:\security.evtx</code>|CDSA::Windows Event Logs|cdsa eventlogs powershell
+How do you list all logs that actually contain records?|<code>Get-WinEvent -ListLog * &#124; Where-Object {$_.RecordCount -gt 0}</code>|CDSA::Windows Event Logs|cdsa eventlogs powershell
+What is the MITRE ATT&amp;CK Matrix?|A globally accessible, curated knowledge base of adversary tactics and techniques, based on real-world observations of attacks. Laid out as a matrix: each column is a tactic, and the cells beneath it are the techniques that achieve that tactic.|CDSA::Incident Handling|cdsa mitre
+Tactic vs. technique in MITRE ATT&amp;CK: what is the difference?|Tactic = the adversary goal, the «why», e.g. Persistence.<br>Technique = how that goal is achieved, the «how», e.g. Scheduled Task.<br>Sub-technique = a more specific variant of a technique.|CDSA::Incident Handling|cdsa mitre comparison
+How is the ATT&amp;CK Matrix laid out?|Columns are the tactics, in rough order of an attack. Each column lists the techniques available for that tactic. An adversary picks techniques from the columns, so the path through the matrix is not linear.|CDSA::Incident Handling|cdsa mitre
+What does a SOC use the ATT&amp;CK Matrix for?|Mapping detection coverage and finding gaps, enriching alerts and threat intelligence with a shared vocabulary, building threat hunting hypotheses, and planning purple team exercises|CDSA::Incident Handling|cdsa mitre
+Cyber Kill Chain vs. MITRE ATT&amp;CK: what is the difference?|Kill Chain = 7 linear, high-level phases that describe the lifecycle of an attack.<br>ATT&amp;CK = a matrix of granular, observed behaviours that is not walked in order.<br>The Kill Chain tells you roughly where an attacker is, ATT&amp;CK tells you what exactly they did and how to detect it.|CDSA::Incident Handling|cdsa mitre killchain comparison
