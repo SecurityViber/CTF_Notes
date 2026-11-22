@@ -153,6 +153,19 @@ Questions to answer:
 
 ### 4. Post-Incident Activity
 
+The workflow once an incident is resolved:
+
+![[post_incident_workflow.png]]
+
+1. Incident Resolved
+2. Post-Incident Review
+3. Lessons Learned Meeting
+4. Root Cause Analysis
+5. Update Policies and Playbooks
+6. Enhance Detection & Monitoring Rules
+7. Knowledge Sharing & Awareness
+8. Report to Management & Close Case
+
 Write the final report, covering:
 
 - What happened and when?
