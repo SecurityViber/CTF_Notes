@@ -282,10 +282,11 @@ readelf -d payload
 
 ## Python Library Hijacking
 
-There are three basic vulnerabilities to hijack with python:
-	1. Wrong write permissions
-	2. Library Path
-	3. PYTHONPATH environment Variable 
+There are three basic vulnerabilities to hijack with Python:
+
+1. Wrong write permissions
+2. Library path
+3. `PYTHONPATH` environment variable
 
 ### Wrong write permission 
 For this you search for python scripts with set SUID. If it is set, you can check the script for some imports and method calls. Once you found some, you can drill dowin under the python modules (for example /usr/local/lib/python3.87dist-packages/psutil/...) and try to discover the method. Once the method is discovered you can plant some code to execute as root and voila, you got root access 

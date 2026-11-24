@@ -7,6 +7,5 @@ tags: [basics, technique, windows, active-directory]
 
 
 ## NTDS 
-- Each domain controller hostss a file called NTDS.dit, which is synchronized across all Domain Controllers
-	- Is a database file that stores Active Directory data
-	- 
+- Each domain controller hosts a file called `NTDS.dit`, which is synchronized across all domain controllers
+	- It is the database file that stores Active Directory data

@@ -4,18 +4,16 @@ tags: [basics, protocol, ipmi]
 
 
 
-- Port 623 
-- Systems that are use IPMI are called Baseboard Management Controllers
-- Default passwords
-	- Dell iDRAC
-		- root
-		- calvin
-	- HP iLO
-		- Administrator
-		- randomized 8-character string consisting of numbers and uppercase letters
-	- Supermicro IPMI 
-		- ADMIN
-		- ADMIN
+- Port 623 (UDP)
+- Systems that use IPMI are called Baseboard Management Controllers (BMCs)
+
+**Default credentials**
+
+| Product | Username | Password |
+| ------- | -------- | -------- |
+| Dell iDRAC | `root` | `calvin` |
+| HP iLO | `Administrator` | randomized 8-character string (numbers + uppercase letters) |
+| Supermicro IPMI | `ADMIN` | `ADMIN` |
 
 ### Footprinting 
 

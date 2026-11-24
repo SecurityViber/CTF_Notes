@@ -13,6 +13,6 @@ Get-WinEvent -ListLog * | Where-Object {$_.RecordCount -gt 0} |
   ForEach-Object { Get-WinEvent -LogName $_.LogName -ErrorAction SilentlyContinue | 
     Where-Object {$_.Id -eq 4698} }
 
-# Export to XML for analysis
+# Export the Security log to an .evtx file for offline analysis
 wevtutil epl Security C:\security.evtx
 ```
