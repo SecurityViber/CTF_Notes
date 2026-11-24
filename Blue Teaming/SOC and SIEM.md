@@ -3,8 +3,6 @@ tags: [cdsa, htb, soc, siem]
 ---
 
 
-
-
 Typical Roles in a SOC
 	- SOC Director
 	- SOC Manager

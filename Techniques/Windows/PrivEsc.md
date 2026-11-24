@@ -93,3 +93,114 @@ JuicyPotato.exe -l 1337 -p c:\windows\system32\cmd.exe -t * -c {CLSID}
 - **SAM** database — stores local user hashes at `C:\Windows\System32\config\SAM`
 - **SeImpersonatePrivilege** — allows impersonating client tokens; almost always leads to SYSTEM
 - **SeDebugPrivilege** — allows attaching a debugger to any process, including SYSTEM ones 
+
+
+
+
+
+### General Notes from the Windows Priv Esc Course 
+
+
+Tools 
+- Seatbelt
+- winPEAS
+- PowerUp
+- SharpUp
+- JAWS
+- SessionGopher
+- Watson
+- LaZagne
+- Windows Exploit Suggester - Next Gneration
+- Sysinternal Suite 
+
+
+General Enumeration:
+- Always look at the routing Tables 
+
+```cmd
+# Check the network configuration
+ipconfig /all
+
+# Arp table 
+arp -a 
+
+# Routing table 
+route print
+
+# Check windows Defender Status 
+Get-MpComputerStatus
+
+# List AppLocker Rules 
+Get-AppLockerPolicy -Effective | select -ExpandPorperty RuleCollections
+
+## System information 
+
+# show all running processes 
+tasklist /svc
+
+# show environment variables 
+set
+
+# Get systeminformation
+systeminfo
+
+# Patches and updates with QFE (Quick Fix Engineering)
+wmic qfe
+
+# Or with powershell
+Get-HotFix | ft -Autosize
+
+
+# Show running processes 
+netstat -ano
+  
+# Show logged-In users 
+query user 
+
+# Current user
+echo %USERNAME%
+
+# Current user Priviliges 
+whoami /priv
+
+# current group infos
+whoami /groups
+
+# Show all users 
+net user
+
+# Get all groups f
+net localgroup
+
+# Details about a group
+net localgroup administrators
+
+
+# Get Password policies 
+net accounts
+
+
+
+```
+
+
+```pwsh
+
+
+# Get isntalled software 
+Get-WmiObject -Class Win32_Product | select Name, Version
+
+
+```
+
+You should be familiar with standard Windows processes such as:
+- Session Manager Subsystem smss.exe
+- Client Server Runtime Subsystem csrss.exe
+- WinLogon winlogon.exe
+- Local Security Authority Subsystem Services LSASS
+- Service Host svhost.exe
+- 
+
+
+Enumeration Protections by Windows:
+- Microsoft AppLocker

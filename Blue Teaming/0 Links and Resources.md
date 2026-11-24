@@ -3,6 +3,11 @@ tags: [cdsa, htb, resources]
 ---
 
 
+## Log Analysis
+
+- CheatSheet Windows Event ID's https://epicdetect.io/blogs/windows-event-log-ids-soc-analysts
+- 
+
 
 ## General
 

@@ -2,10 +2,6 @@
 tags: [basics, technique]
 ---
 
-
-
-Here some common encoding and decoding commands.
-
 ## Base64
 
 ```bash

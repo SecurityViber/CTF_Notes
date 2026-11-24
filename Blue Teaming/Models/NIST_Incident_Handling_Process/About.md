@@ -1,34 +1,3 @@
----
-tags: [cdsa, htb, incident-response]
----
-
-
-
-
-
-The 7 stages of the cyberkillchain
-	![[cyberkillchain.png]]
-		Recon
-			-  Initial stage
-			- Attacker chooses target + performs information gathering (osint etc.)
-		Weaponize
-			- Malware for initial accces is developed and embedded into type of exploit
-			- Malware is lightweight and should not be detected by AV or EDR
-			- Goal is to provide a persistent Remote Access
-		Deliver
-			- Exploit/Payload gets delivered to the victim.
-			- Usually phishing via email/phone
-		Exploitation stage
-			- Moment when exploit or delivered payload is triggered
-			- attacker attempts to execute code on the target system in order to gain access or control
-		Installation stage
-			- Initial stager is executed and running on compromised machine
-			- Typical techniques are: Droppers, Backdoors, Rootkits
-		Command and Control stage
-			- Attacker establishes a remote access capability to compromised machine
-		Action
-			- Can be data exfiltration, gaining higher level of privileges etc.
-			- 
 
 Four stages of the Incident Handling Process
 	![[nist_incident_handling_process.png]]
@@ -98,4 +67,3 @@ Post-Incident Activity Stage
 		- What actions have been implemented to contain and eradicate the incident?
 		- What preventive measures should be put in place to prevent similar incidents in the future?
 		- What tools and resources are needed to detect and analyze similar incidents in the future?
-

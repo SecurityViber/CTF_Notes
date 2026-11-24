@@ -18,8 +18,6 @@ tags: [basics, technique, password]
 - [Crack Station Password Lists](https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm)
 - [Defaultcreds-cheat-sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet)
 
-
-
 ## Identifying a Hash 
 
 ```bash
@@ -84,7 +82,6 @@ python pdf2john.py inventory.pdf
 # Properly extracting the hash from an output 
 7z2john hashcat.7z| cut -f2 -d ":" > hash.txt
 ```
-
 
 
 ## Tools to use 

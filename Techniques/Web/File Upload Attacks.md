@@ -1,12 +1,6 @@
 ---
 tags: [basics, technique, web]
 ---
-
-
-
-## Resources 
-
-
 ## Webshells 
 
 You can use already existing Webshells such as phpbash

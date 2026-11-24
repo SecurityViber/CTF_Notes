@@ -8,7 +8,7 @@ tags: [basics, reference]
 | ------------- | ----------------------------------------------------------------------------- |
 | Threat        | A new incident with potential to harm a system                                |
 | Vulnerability | Known weakness that hacker could exploit                                      |
-| Risk          | The potntial for damage when a threat exploits a vulnerability                |
+| Risk          | The potntial for damage when a threat exploits a vulnerability                |y
 | Exploit       | any code or resourcs that can be used to take advantage of an assets weakness |
 | PCI DSS       | Payment Card Industry Data Security Standard                                  |
 | HIPAA         | Health Insurance Portability and Accountability Act                           |

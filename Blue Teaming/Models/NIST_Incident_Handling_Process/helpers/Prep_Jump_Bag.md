@@ -1,0 +1,20 @@
+
+
+		**Jump Bag Equipment**
+			- Additional laptop or a forensic workstation for each incident handling team member to preserve disk images and log files, perform data analysis, and investigate without any restrictions (we know malware will be tested here, so tools such as antivirus should be disabled). These devices should be handled appropriately and not in a way that introduces risks to the organization.
+			- Digital forensic image acquisition and analysis tools
+			- Memory capture and analysis tools
+			- Live response capture and analysis
+			- Log analysis tools
+			- Network capture and analysis tools
+			- Network cables and switches
+			- Write blockers
+			- Hard drives for forensic imaging
+			- Power cables
+			- Screwdrivers, tweezers, and other relevant tools to repair or disassemble hardware devices if needed
+			- Indicator of Compromise (IOC) creator and the ability to search for IOCs across the organization
+			- Chain of custody forms
+			- Encryption software
+			- Ticket tracking system
+			- Secure facility for storage and investigation
+			- Incident handling system independent of your organization's infrastructure

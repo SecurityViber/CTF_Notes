@@ -1,9 +1,6 @@
 ---
 tags: [basics, technique, windows, encryption]
 ---
-
-
-
 ## Mounting Bitlocker 
 
 ```bash 
@@ -21,5 +18,4 @@ cd /media/bitlockermount
 
 sudo umount /media/bitlockermount
 sudo umount /media/bitlocker
-
 ```
