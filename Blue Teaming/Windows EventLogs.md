@@ -99,6 +99,24 @@ Primary components of an event in the Windows Event Log:
 
 Order of a clean detection: `1116` → `1118` → `1119` (or `1120` on failure).
 
+### Sysmon
+
+Not installed by default, and only logs what its config file tells it to.
+The most common IDs:
+
+| ID | Event | Why it matters |
+| -- | ----- | -------------- |
+| 1 | Process creation | Records command line, hashes and parent process, far richer than the Security log |
+| 2 | File creation time changed | Timestomping |
+| 3 | Network connection | Which process talked to where |
+| 7 | Image loaded | DLL side-loading |
+| 8 | CreateRemoteThread | Process injection |
+| 10 | Process access | A handle opened to another process, e.g. reading LSASS memory |
+| 11 | File created | Dropped files |
+| 12 | Registry key created or deleted | |
+| 13 | Registry value set | Most persistence writes a value, so it lands here rather than on 12 |
+| 22 | DNS query | Which process resolved what |
+
 ## Useful PowerShell Queries
 
 ```powershell
